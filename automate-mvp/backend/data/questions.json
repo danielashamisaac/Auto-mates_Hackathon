@@ -1,0 +1,50 @@
+{
+  "data-science-analysis": [
+    {"q": "What does 'CSV' stand for?", "options": ["Comma Separated Values", "Computer System Value", "Central Storage Volume", "Coded String Variable"], "answer": 0},
+    {"q": "Which of these is a programming language commonly used for data analysis?", "options": ["HTML", "Python", "CSS", "SQL Server Management"], "answer": 1},
+    {"q": "What is the primary purpose of a spreadsheet like Excel?", "options": ["Video editing", "Organizing and calculating data", "Web hosting", "Sending emails"], "answer": 1},
+    {"q": "In statistics, what does 'average' (mean) represent?", "options": ["The most frequent value", "The middle value", "The sum of values divided by their count", "The largest value"], "answer": 2},
+    {"q": "What is a database used for?", "options": ["Storing and organizing structured data", "Designing logos", "Browsing the internet", "Playing media files"], "answer": 0},
+    {"q": "Which chart type is best for showing a trend over time?", "options": ["Pie chart", "Line chart", "Scatter chart only", "None of the above"], "answer": 1},
+    {"q": "What does 'data cleaning' mean?", "options": ["Deleting a computer's hard drive", "Fixing errors and inconsistencies in a dataset", "Formatting a document", "Installing antivirus software"], "answer": 1},
+    {"q": "Which of these is a common file format for storing tabular data?", "options": [".mp3", ".csv", ".exe", ".png"], "answer": 1},
+    {"q": "What is a 'variable' in data analysis?", "options": ["A fixed constant number", "A characteristic or attribute that can be measured", "A type of chart", "A computer virus"], "answer": 1},
+    {"q": "Which skill is most useful when interpreting data results?", "options": ["Critical thinking", "Graphic design only", "Typing speed", "Video editing"], "answer": 0}
+  ],
+  "cybersecurity": [
+    {"q": "What does 'password' protect?", "options": ["Access to an account or system", "The speed of a computer", "The color of a screen", "Internet speed"], "answer": 0},
+    {"q": "What is a 'firewall' used for?", "options": ["Cooling a computer", "Blocking unauthorized network access", "Printing documents", "Playing games"], "answer": 1},
+    {"q": "What does 'phishing' mean?", "options": ["A type of fishing sport", "Tricking someone into revealing sensitive information", "A programming language", "A hardware component"], "answer": 1},
+    {"q": "What is malware?", "options": ["Malicious software designed to cause harm", "A type of keyboard", "A safe system update", "A design tool"], "answer": 0},
+    {"q": "Why is it recommended to use strong, unique passwords?", "options": ["To make them easier to forget", "To reduce the risk of unauthorized access", "To slow down the computer", "It has no real benefit"], "answer": 1},
+    {"q": "What does 'encryption' do to data?", "options": ["Deletes it permanently", "Converts it into a coded form to prevent unauthorized access", "Makes it load faster", "Compresses it for storage only"], "answer": 1},
+    {"q": "What is two-factor authentication (2FA)?", "options": ["Using two different computers", "An extra layer of security requiring a second verification step", "A type of virus", "A backup hard drive"], "answer": 1},
+    {"q": "What should you do if you receive a suspicious email link?", "options": ["Click it immediately", "Avoid clicking and verify the sender first", "Forward it to everyone", "Reply with your password"], "answer": 1},
+    {"q": "What is a VPN mainly used for?", "options": ["Speeding up gaming graphics", "Creating a private, secure network connection over the internet", "Editing photos", "Formatting hard drives"], "answer": 1},
+    {"q": "What does 'social engineering' refer to in security?", "options": ["Building physical structures", "Manipulating people into giving up confidential information", "A type of software license", "A networking cable standard"], "answer": 1}
+  ],
+  "hardware-embedded-systems": [
+    {"q": "What does 'CPU' stand for?", "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Core Processing Utility"], "answer": 0},
+    {"q": "Which of these is an example of computer hardware?", "options": ["An operating system", "A keyboard", "A word processor app", "A web browser"], "answer": 1},
+    {"q": "What is RAM primarily used for?", "options": ["Permanent long-term storage", "Temporary storage for actively used data", "Displaying graphics only", "Connecting to the internet"], "answer": 1},
+    {"q": "What is an embedded system?", "options": ["A general-purpose desktop computer", "A dedicated computer system built into a larger device", "A type of software license", "A social media platform"], "answer": 1},
+    {"q": "Which tool is commonly used to assemble or repair electronic circuits?", "options": ["Soldering iron", "Paintbrush", "Word processor", "Web browser"], "answer": 0},
+    {"q": "What does 'microcontroller' refer to?", "options": ["A small computer on a single chip used to control devices", "A type of monitor", "A wireless router", "A printer driver"], "answer": 0},
+    {"q": "Which of these is an input device?", "options": ["Monitor", "Speaker", "Keyboard", "Printer"], "answer": 2},
+    {"q": "What is the function of a motherboard?", "options": ["Storing printed documents", "Connecting and allowing communication between hardware components", "Displaying video only", "Cooling the room"], "answer": 1},
+    {"q": "What precaution helps prevent damage from static electricity when handling hardware?", "options": ["Wearing an anti-static wrist strap", "Working near water", "Touching the screen first", "Removing all safety gear"], "answer": 0},
+    {"q": "What does 'GPIO' commonly stand for in embedded systems?", "options": ["General Purpose Input/Output", "Global Processor Input Order", "Graphics Processing Input/Output", "General Program Interface Object"], "answer": 0}
+  ],
+  "graphics-3d": [
+    {"q": "What does '3D modeling' refer to?", "options": ["Creating a three-dimensional digital representation of an object", "Editing a text document", "Compressing audio files", "Writing code comments"], "answer": 0},
+    {"q": "Which of these is commonly used for digital image editing?", "options": ["A spreadsheet program", "A graphics/image editing software", "A network router", "A database engine"], "answer": 1},
+    {"q": "In 3D software, what is a 'vertex'?", "options": ["A type of light source", "A single point in 3D space used to build geometry", "A rendering preset", "A color channel"], "answer": 1},
+    {"q": "What does 'rendering' mean in computer graphics?", "options": ["Deleting a file", "Generating an image from a 3D model", "Compressing a video", "Installing drivers"], "answer": 1},
+    {"q": "Which file format is commonly used for 3D models?", "options": [".docx", ".obj", ".mp3", ".txt"], "answer": 1},
+    {"q": "What does 'UV mapping' refer to?", "options": ["Network security scanning", "Applying a 2D texture to a 3D model surface", "Audio mixing", "CPU profiling"], "answer": 1},
+    {"q": "Which property controls how light reflects off a surface in 3D software?", "options": ["Material / shader", "Font size", "Frame rate", "Network latency"], "answer": 0},
+    {"q": "What is 'ray tracing' used for?", "options": ["Drawing with a graphics tablet", "Simulating realistic lighting in renders", "Writing CSS", "Installing antivirus"], "answer": 1},
+    {"q": "What is a 'polygon' in 3D modeling?", "options": ["A flat shape made of vertices and edges that forms part of a 3D surface", "A type of network cable", "A sound effect preset", "An image filter"], "answer": 0},
+    {"q": "Why do 3D artists use 'reference images'?", "options": ["To make their files smaller", "To guide proportions, lighting and details for an accurate model", "To encrypt their scenes", "To speed up the CPU"], "answer": 1}
+  ]
+}

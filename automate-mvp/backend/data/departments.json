@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "data-science-analysis",
+    "name": "Data Science and Analysis",
+    "capacity": 20,
+    "generalPrice": 150000
+  },
+  {
+    "slug": "cybersecurity",
+    "name": "Cybersecurity",
+    "capacity": 20,
+    "generalPrice": 143000
+  },
+  {
+    "slug": "hardware-embedded-systems",
+    "name": "Hardware and Embedded Systems",
+    "capacity": 20,
+    "generalPrice": 120000
+  },
+  {
+    "slug": "graphics-3d",
+    "name": "Graphics and 3D",
+    "capacity": 20,
+    "generalPrice": 300000
+  }
+]
