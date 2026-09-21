@@ -17,14 +17,20 @@ class StartEligibilityIn(BaseModel):
     departmentSlug: str
 
 
+class AnswerIn(BaseModel):
+    questionId: str
+    answer: int
+
+
 class SubmitEligibilityIn(BaseModel):
     candidateId: str
     departmentSlug: str
-    answers: List[int]
+    answers: List[AnswerIn]
 
 
 class QuestionOut(BaseModel):
-    index: int
+    id: str
+    position: int
     q: str
     options: List[str]
 

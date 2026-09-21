@@ -11,7 +11,6 @@ from schemas import (
     QuestionOut,
 )
 from seed import QUESTIONS_BY_DEPARTMENT, MAX_ATTEMPTS, PASS_PERCENT
-import random
 
 router = APIRouter(prefix="/api/eligibility", tags=["eligibility"])
 
@@ -50,13 +49,18 @@ def start(payload: StartEligibilityIn, db: Session = Depends(get_db)):
 
     used = _attempts_used(db, payload.candidateId, dept.slug)
     remaining = max(0, MAX_ATTEMPTS - used)
+    if remaining == 0:
+        raise HTTPException(status_code=403, detail="No attempts remaining for this department")
 
-    order = list(range(len(questions)))
-    random.shuffle(order)
-    sampled = []
-    for idx, q_idx in enumerate(order):
-        q = questions[q_idx]
-        sampled.append(QuestionOut(index=idx, q=q["q"], options=q["options"]))
+    sampled = [
+        QuestionOut(
+            id=question["id"],
+            position=index,
+            q=question["q"],
+            options=question["options"],
+        )
+        for index, question in enumerate(questions)
+    ]
 
     return {
         "departmentSlug": dept.slug,
@@ -75,12 +79,29 @@ def submit(payload: SubmitEligibilityIn, db: Session = Depends(get_db)):
     if not questions:
         raise HTTPException(status_code=500, detail="No questions configured for department")
 
-    if len(payload.answers) != len(questions):
-        raise HTTPException(status_code=400, detail="Answers length must match question count")
+    used = _attempts_used(db, payload.candidateId, dept.slug)
+    if used >= MAX_ATTEMPTS:
+        raise HTTPException(status_code=403, detail="No attempts remaining for this department")
 
+    if db.query(Attempt).filter(
+        Attempt.candidate_id == payload.candidateId,
+        Attempt.department_slug == dept.slug,
+        Attempt.passed == 1,
+    ).first():
+        raise HTTPException(status_code=409, detail="Eligibility has already been passed")
+
+    expected_ids = {question["id"] for question in questions}
+    submitted_ids = [answer.questionId for answer in payload.answers]
+    if len(submitted_ids) != len(expected_ids) or set(submitted_ids) != expected_ids:
+        raise HTTPException(status_code=400, detail="Answers must include each eligibility question exactly once")
+
+    answers_by_id = {answer.questionId: answer.answer for answer in payload.answers}
     correct = 0
-    for ans, q in zip(payload.answers, questions):
-        if ans == q["answer"]:
+    for question in questions:
+        answer = answers_by_id[question["id"]]
+        if answer < 0 or answer >= len(question["options"]):
+            raise HTTPException(status_code=400, detail="Answer option is out of range")
+        if answer == question["answer"]:
             correct += 1
 
     percent = round((correct / len(questions)) * 100)

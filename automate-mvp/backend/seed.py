@@ -42,7 +42,14 @@ def seed_departments(db: Session):
 
 def load_static_data():
     global QUESTIONS_BY_DEPARTMENT, TIMETABLE_BY_DEPARTMENT
-    QUESTIONS_BY_DEPARTMENT = _load_json(QUESTIONS_FILE)
+    raw_questions = _load_json(QUESTIONS_FILE)
+    QUESTIONS_BY_DEPARTMENT = {
+        department_slug: [
+            {**question, "id": question.get("id", f"{department_slug}-q-{index + 1:02d}")}
+            for index, question in enumerate(questions)
+        ]
+        for department_slug, questions in raw_questions.items()
+    }
     TIMETABLE_BY_DEPARTMENT = _load_json(TIMETABLE_FILE)
 
 

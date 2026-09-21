@@ -6,6 +6,7 @@ async function request(path, options = {}) {
     credentials: 'include',
     headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
     body: options.body ? JSON.stringify(options.body) : undefined,
+    signal: options.signal,
   };
   const res = await fetch(`${BASE}${path}`, opts);
   const text = await res.text();
@@ -29,8 +30,8 @@ export const api = {
   getDepartments: () => request('/departments'),
   getDepartment: (slug) => request(`/departments/${slug}`),
 
-  startEligibility: (candidateId, departmentSlug) =>
-    request('/eligibility/start', { method: 'POST', body: { candidateId, departmentSlug } }),
+  startEligibility: (candidateId, departmentSlug, signal) =>
+    request('/eligibility/start', { method: 'POST', body: { candidateId, departmentSlug }, signal }),
   submitEligibility: (candidateId, departmentSlug, answers) =>
     request('/eligibility/submit', {
       method: 'POST',
