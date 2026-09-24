@@ -26,10 +26,14 @@ export default function Landing() {
   return (
     <div className="page">
       <section className="hero">
-        <div className="flex-center" style={{ marginBottom: 18 }}>
-          <Sparkles size={18} color="#a05cff" />
-          <span className="tagline" style={{ color: '#a05cff' }}>HUB SOLUTION · 2026</span>
+        <div className="hero-badges">
+          <div className="hero-badge">
+            <Sparkles size={16} />
+            <span>Hub solution · 2026</span>
+          </div>
+          <div className="hero-badge muted">Admissions workflow</div>
         </div>
+
         <h1>AUTOMATE</h1>
         <p className="tagline">Automate · Innovate · Elevate</p>
         <p className="blurb">
@@ -37,6 +41,21 @@ export default function Landing() {
           Choose a track, prove your aptitude, and walk away with a clean digital receipt and
           your class timetable — all in one place.
         </p>
+
+        <div className="hero-stats">
+          <div className="stat-box">
+            <strong>3-step</strong>
+            <span>Admission flow</span>
+          </div>
+          <div className="stat-box">
+            <strong>Fast</strong>
+            <span>Payment verification</span>
+          </div>
+          <div className="stat-box">
+            <strong>Secure</strong>
+            <span>Admin dashboard</span>
+          </div>
+        </div>
 
         <div className="hero-grid">
           {actions.map((a) => (
@@ -46,9 +65,7 @@ export default function Landing() {
               </div>
               <h2>{a.title}</h2>
               <p>{a.description}</p>
-              <div style={{ marginTop: 'auto', color: '#4f8cff', fontWeight: 600, fontSize: 13, letterSpacing: '0.16em' }}>
-                ENTER →
-              </div>
+              <div className="action-link">ENTER →</div>
             </Link>
           ))}
         </div>

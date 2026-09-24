@@ -14,6 +14,8 @@ import AdminLogin from './pages/AdminLogin.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import { api } from './api.js';
 
+const THEME_KEY = 'automate-theme';
+
 function AdminGuard({ children }) {
   const [state, setState] = useState('loading');
   const location = useLocation();
@@ -45,9 +47,16 @@ function AdminGuard({ children }) {
 }
 
 export default function App() {
+  const [theme, setTheme] = useState(() => localStorage.getItem(THEME_KEY) || 'light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_KEY, theme);
+  }, [theme]);
+
   return (
     <ToastProvider>
-      <Topbar />
+      <Topbar theme={theme} onToggleTheme={() => setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))} />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/capture" element={<CategorySelect />} />

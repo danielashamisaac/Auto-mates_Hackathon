@@ -86,13 +86,32 @@ class StudentCreateOut(BaseModel):
     category: str
 
 
+class PaymentInitIn(BaseModel):
+    regNo: str
+    email: Optional[str] = None
+    amount: Optional[int] = None
+
+
+class PaymentInitOut(BaseModel):
+    alreadyPaid: bool
+    amount: int
+    registrationFee: int
+    serviceFee: int
+    reference: str
+    authorizationUrl: Optional[str] = None
+    status: str
+
+
 class PaymentVerifyIn(BaseModel):
     regNo: str
+    reference: Optional[str] = None
 
 
 class PaymentVerifyOut(BaseModel):
     verified: bool
     alreadyPaid: bool
+    reference: Optional[str] = None
+    amount: Optional[int] = None
 
 
 class AdminLoginIn(BaseModel):

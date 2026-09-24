@@ -44,8 +44,13 @@ export const api = {
     request('/students', { method: 'POST', body: payload }),
   getStudent: (regNo) => request(`/students/${encodeURIComponent(regNo)}`),
 
-  verifyPayment: (regNo) =>
-    request('/payment/verify', { method: 'POST', body: { regNo } }),
+  initializePayment: (regNo, email, amount) =>
+    request('/payment/initialize', {
+      method: 'POST',
+      body: { regNo, email, amount },
+    }),
+  verifyPayment: (regNo, reference) =>
+    request('/payment/verify', { method: 'POST', body: { regNo, reference } }),
 
   adminLogin: (username, password) =>
     request('/admin/login', { method: 'POST', body: { username, password } }),

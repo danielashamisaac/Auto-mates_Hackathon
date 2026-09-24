@@ -29,10 +29,13 @@ cd backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --host 127.0.0.1 --port 8001
 ```
 
-You should see `Uvicorn running on http://127.0.0.1:8000`. The SQLite database
+If port 8000 is already in use, the app is configured to run on 8001. The frontend
+proxy is already pointed to `http://localhost:8001`.
+
+You should see `Uvicorn running on http://127.0.0.1:8001`. The SQLite database
 (`backend/automate.db`) is created automatically on first boot, with the four
 departments pre-seeded.
 

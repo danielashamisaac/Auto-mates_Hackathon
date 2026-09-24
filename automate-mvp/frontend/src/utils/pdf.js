@@ -1,4 +1,3 @@
-import jsPDF from 'jspdf';
 import { TIMETABLES } from '../data/timetable.js';
 
 const BRAND_BLUE = [79, 140, 255];
@@ -45,7 +44,8 @@ function drawFooter(doc) {
   doc.text(`Generated ${new Date().toLocaleString()}`, 196, pageHeight - 10, { align: 'right' });
 }
 
-export function downloadReceipt(student) {
+export async function downloadReceipt(student) {
+  const { default: jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'mm', format: 'a4' });
   drawHeader(doc, 'OFFICIAL RECEIPT');
 
@@ -108,7 +108,8 @@ export function downloadReceipt(student) {
   doc.save(`receipt-${student.regNo}.pdf`);
 }
 
-export function downloadTimetable(student) {
+export async function downloadTimetable(student) {
+  const { default: jsPDF } = await import('jspdf');
   const doc = new jsPDF({ unit: 'mm', format: 'a4' });
   const tt = TIMETABLES[student.departmentSlug] || {
     title: `${student.departmentName} — Timetable`,
