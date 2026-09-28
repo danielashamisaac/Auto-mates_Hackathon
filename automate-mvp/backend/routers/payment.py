@@ -16,11 +16,11 @@ PAYSTACK_BASE_URL = os.getenv("PAYSTACK_BASE_URL", "https://api.paystack.co")
 
 
 def _service_fee(amount: int) -> int:
-    return int(round(amount * 0.1))
+    return int(round(amount * 0.037))
 
 
 def _registration_fee(amount: int) -> int:
-    return int(round(amount / 1.1))
+    return int(round(amount / 1.037))
 
 
 def _paystack_secret() -> str:

@@ -57,7 +57,7 @@ export default function Success() {
         <h1>Congratulations, {student.fullName.split(' ')[0]}!</h1>
         <p className="text-dim" style={{ maxWidth: 540, margin: '8px auto 0' }}>
           Your registration is complete. We've recorded your payment and saved your seat in{' '}
-          <strong style={{ color: '#e8ecff' }}>{student.departmentName}</strong>.
+          <strong style={{ color: 'var(--text)' }}>{student.departmentName}</strong>.
         </p>
 
         <div className="ref">{student.regNo}</div>

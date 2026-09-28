@@ -79,7 +79,7 @@ export default function CategorySelect() {
           </div>
           <p className="text-dim mt-12" style={{ fontSize: 14, lineHeight: 1.55 }}>
             You are studying an IT-related program. We will collect your institution, matric number,
-            and IT duration. Fee is a flat <strong style={{ color: '#e8ecff' }}>NGN 22,000</strong> across
+            and IT duration. Fee is a flat <strong style={{ color: 'var(--text)' }}>NGN 22,000</strong> across
             all departments.
           </p>
           <div className="cat-price">NGN 22,000 flat</div>

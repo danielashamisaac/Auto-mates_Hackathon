@@ -167,7 +167,7 @@ export default function CaptureForm() {
         <div className="flex-between mt-24">
           <div className="text-dim" style={{ fontSize: 13 }}>
             By submitting you confirm the details above are correct. Fee:{' '}
-            <strong style={{ color: '#e8ecff' }}>
+            <strong style={{ color: 'var(--text)' }}>
               NGN {state.category === 'IT' ? '22,000' : state.department.generalPrice.toLocaleString('en-NG')}
             </strong>
           </div>

@@ -55,7 +55,7 @@ def create_student(payload: StudentCreateIn, db: Session = Depends(get_db)):
     else:
         raise HTTPException(status_code=500, detail="Could not generate a unique reference")
 
-    total_amount = int(round(amount * 1.1))
+    total_amount = int(round(amount * 1.037))
 
     student = Student(
         reg_no=reg_no,

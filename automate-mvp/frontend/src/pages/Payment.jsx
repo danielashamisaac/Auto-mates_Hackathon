@@ -41,7 +41,7 @@ export default function Payment() {
 
   const s = state.student;
   const totalAmount = Number(s.amount || 0);
-  const registrationFee = Math.round(totalAmount / 1.1);
+  const registrationFee = Math.round(totalAmount / 1.037);
   const serviceFee = totalAmount - registrationFee;
   const amountLabel = `NGN ${totalAmount.toLocaleString('en-NG')}`;
 
@@ -155,7 +155,7 @@ export default function Payment() {
           <div className="row"><span className="label">Department</span><span className="value">{s.departmentName}</span></div>
           <div className="row"><span className="label">Reference</span><span className="value">{s.regNo}</span></div>
           <div className="row"><span className="label">Registration fee</span><span className="value">NGN {registrationFee.toLocaleString('en-NG')}</span></div>
-          <div className="row"><span className="label">Service fee (10%)</span><span className="value">NGN {serviceFee.toLocaleString('en-NG')}</span></div>
+          <div className="row"><span className="label">Service fee (3.7%)</span><span className="value">NGN {serviceFee.toLocaleString('en-NG')}</span></div>
           <div className="row"><span className="label">Total amount</span><span className="value" style={{ color: '#4f8cff' }}>{amountLabel}</span></div>
         </div>
 

@@ -701,6 +701,7 @@ html[data-theme='dark'] .dept-card {
 .quiz-q {
   font-size: 20px;
   margin: 0 0 18px;
+  color: var(--text);
 }
 
 .quiz-options {
@@ -718,6 +719,7 @@ html[data-theme='dark'] .dept-card {
   border: 1px solid var(--border);
   cursor: pointer;
   background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
   transition: border-color 120ms ease, background 120ms ease;
 }
 
@@ -737,6 +739,7 @@ html[data-theme='dark'] .dept-card {
   display: grid;
   place-items: center;
   background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
   font-weight: 700;
 }
 
