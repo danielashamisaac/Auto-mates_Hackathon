@@ -52,9 +52,11 @@ export default function AdminLogin() {
         <button className="btn btn-primary btn-block mt-24" type="submit" disabled={busy}>
           {busy ? <div className="spinner" /> : <><LogIn size={14} /> Sign in</>}
         </button>
-        <div className="text-center text-dim mt-16" style={{ fontSize: 12 }}>
-          <Lock size={12} /> Demo credentials: <code>admin</code> / <code>admin123</code>
-        </div>
+        {import.meta.env.DEV && (
+          <div className="text-center text-dim mt-16" style={{ fontSize: 12 }}>
+            <Lock size={12} /> Demo credentials: <code>admin</code> / <code>admin123</code>
+          </div>
+        )}
       </form>
     </div>
   );
