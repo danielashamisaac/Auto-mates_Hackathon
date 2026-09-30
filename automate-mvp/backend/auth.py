@@ -2,9 +2,20 @@ import os
 from fastapi import Cookie, Depends, HTTPException, Response, status
 from itsdangerous import BadSignature, URLSafeSerializer
 
+APP_ENV = os.environ.get("APP_ENV", "development").lower()
 ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin123")
 SESSION_SECRET = os.environ.get("SESSION_SECRET", "automate-hub-solution-session-secret-change-me")
+if APP_ENV == "production":
+    missing_secrets = [
+        name for name in ("ADMIN_USERNAME", "ADMIN_PASSWORD", "SESSION_SECRET")
+        if not os.environ.get(name)
+    ]
+    if missing_secrets:
+        raise RuntimeError(f"Missing required production environment variables: {', '.join(missing_secrets)}")
+
+COOKIE_SECURE = os.environ.get("COOKIE_SECURE", str(APP_ENV == "production")).lower() == "true"
+COOKIE_SAMESITE = os.environ.get("COOKIE_SAMESITE", "none" if APP_ENV == "production" else "lax")
 COOKIE_NAME = "admin_session"
 
 _serializer = URLSafeSerializer(SESSION_SECRET, salt="admin")
@@ -26,8 +37,8 @@ def set_admin_cookie(response: Response, username: str) -> None:
         key=COOKIE_NAME,
         value=_make_token(username),
         httponly=True,
-        samesite="lax",
-        secure=False,
+        samesite=COOKIE_SAMESITE,
+        secure=COOKIE_SECURE,
         max_age=60 * 60 * 8,
         path="/",
     )
