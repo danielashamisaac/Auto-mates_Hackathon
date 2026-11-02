@@ -1,8 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Download, LogOut, RefreshCw, Search, Save } from 'lucide-react';
+import { Download, FileText, LogOut, RefreshCw, Search, Save } from 'lucide-react';
 import { api } from '../api.js';
 import { useToast } from '../components/Toast.jsx';
+import AdminImportPanel from '../components/AdminImportPanel.jsx';
+import AdminQuestionManager from '../components/AdminQuestionManager.jsx';
+import AdminPricingPanel from '../components/AdminPricingPanel.jsx';
 import { rowsToCsv, downloadCsv } from '../utils/csv.js';
 
 function fmt(n) {
@@ -52,7 +55,7 @@ export default function AdminDashboard() {
       'department_slug', 'department_name', 'amount', 'paid',
       'created_at', 'paid_at',
     ];
-    const rows = filteredStudents.map((s) => ({
+    const rows = students.map((s) => ({
       ...s,
       paid: s.paid ? 'PAID' : 'PENDING',
     }));
@@ -182,6 +185,10 @@ export default function AdminDashboard() {
         </div>
       </div>
 
+      <AdminPricingPanel />
+        <AdminImportPanel onImportComplete={load} />
+        <AdminQuestionManager />
+
       <div className="section">
         <h2>Registrations</h2>
         <div className="search-bar">
@@ -207,12 +214,13 @@ export default function AdminDashboard() {
                 <th>Category</th>
                 <th>Amount</th>
                 <th>Status</th>
+                <th>Source document</th>
                 <th>Date</th>
               </tr>
             </thead>
             <tbody>
               {filteredStudents.length === 0 && (
-                <tr><td colSpan="7" className="text-center text-dim" style={{ padding: 24 }}>No matching registrations yet.</td></tr>
+                <tr><td colSpan="8" className="text-center text-dim" style={{ padding: 24 }}>No matching registrations yet.</td></tr>
               )}
               {filteredStudents.map((s) => (
                 <tr key={s.reg_no}>
@@ -226,6 +234,7 @@ export default function AdminDashboard() {
                       {s.paid ? 'PAID' : 'PENDING'}
                     </span>
                   </td>
+                  <td>{s.source_document_url && <a className="btn btn-ghost" href={s.source_document_url} target="_blank" rel="noreferrer" aria-label={`Open source document for ${s.full_name}`}><FileText size={14} /> Open</a>}</td>
                   <td>{s.created_at}{s.paid_at && <div className="text-dim" style={{ fontSize: 11 }}>Paid {s.paid_at}</div>}</td>
                 </tr>
               ))}

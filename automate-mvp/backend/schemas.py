@@ -10,6 +10,12 @@ class DepartmentOut(BaseModel):
     generalPrice: int
     slotsRemaining: int
     isFull: bool
+    has_subcourses: bool = False
+    subcourses: List[Dict[str, Any]] = []
+    durationWeeks: Optional[int] = None
+    price: Optional[int] = None
+    price_options: Optional[Dict[str, int]] = None
+    itUnifiedPrice: int = 22000
 
 
 class StartEligibilityIn(BaseModel):
@@ -139,6 +145,7 @@ class AdminStudentRow(BaseModel):
     paid: bool
     created_at: str
     paid_at: Optional[str] = None
+    source_document_url: Optional[str] = None
 
 
 class AdminPerDepartment(BaseModel):

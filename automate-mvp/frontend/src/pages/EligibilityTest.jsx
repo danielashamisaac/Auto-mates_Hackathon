@@ -44,7 +44,7 @@ export default function EligibilityTest() {
     api.startEligibility(candidateId, departmentSlug, controller.signal)
       .then((data) => {
         if (!active) return;
-        if (!Array.isArray(data.questions) || data.questions.length !== 10) {
+        if (!Array.isArray(data.questions) || data.questions.length !== 20) {
           throw new Error('The eligibility service returned an invalid question set.');
         }
         setQuestions(data.questions);
@@ -67,7 +67,7 @@ export default function EligibilityTest() {
     (count, question) => count + (Number.isInteger(selectedAnswers[question.id]) ? 1 : 0),
     0,
   );
-  const allAnswered = questions.length === 10 && answeredCount === questions.length;
+  const allAnswered = questions.length === 20 && answeredCount === questions.length;
 
   function selectAnswer(questionId, optionIndex) {
     setSelectedAnswers((current) => ({ ...current, [questionId]: optionIndex }));
@@ -125,7 +125,7 @@ export default function EligibilityTest() {
       <div className="page-header">
         <div>
           <h1>Step 3 · Eligibility Test — {departmentName}</h1>
-          <p>10 multiple-choice questions · Pass mark 60% · 3 attempts maximum</p>
+          <p>20 multiple-choice questions · Pass mark 60% · 3 attempts maximum</p>
         </div>
         <div className="flex gap-12">
           <button className="btn btn-ghost" onClick={resetAttempts}>

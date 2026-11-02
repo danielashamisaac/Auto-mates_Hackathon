@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, Text
+from sqlalchemy import Column, ForeignKey, Integer, String, DateTime, Text
 from sqlalchemy.sql import func
 from database import Base
 
@@ -40,3 +40,33 @@ class Student(Base):
     paystack_ref = Column(String, nullable=True)
     created_at = Column(DateTime, server_default=func.now(), nullable=False)
     paid_at = Column(DateTime, nullable=True)
+    source_document_key = Column(String, nullable=True)
+
+
+class ImportBatch(Base):
+    __tablename__ = "import_batches"
+
+    id = Column(Integer, primary_key=True, index=True)
+    source_type = Column(String, nullable=False)
+    original_filename = Column(String, nullable=False)
+    created_by = Column(String, nullable=False)
+    status = Column(String, nullable=False, default="pending_review")
+    created_at = Column(DateTime, server_default=func.now(), nullable=False)
+    document_key = Column(String, nullable=True)
+
+
+class ImportRow(Base):
+    __tablename__ = "import_rows"
+
+    id = Column(Integer, primary_key=True, index=True)
+    batch_id = Column(Integer, ForeignKey("import_batches.id"), nullable=False, index=True)
+    row_number = Column(Integer, nullable=False)
+    raw_json = Column(Text, nullable=False)
+    data_json = Column(Text, nullable=False)
+    issues_json = Column(Text, nullable=False, default="[]")
+    warnings_json = Column(Text, nullable=False, default="[]")
+    status = Column(String, nullable=False, default="pending_review")
+    created_student_id = Column(Integer, ForeignKey("students.id"), nullable=True)
+    reviewed_by = Column(String, nullable=True)
+    reviewed_at = Column(DateTime, nullable=True)
+    source_text = Column(Text, nullable=True)

@@ -1,26 +1,219 @@
 [
   {
-    "slug": "data-science-analysis",
-    "name": "Data Science and Analysis",
+    "slug": "computer-appreciation",
+    "name": "Diploma in Computer Appreciation",
     "capacity": 20,
-    "generalPrice": 150000
+    "generalPrice": 24000,
+    "durationWeeks": 5,
+    "has_subcourses": false,
+    "price": 24000
   },
   {
-    "slug": "cybersecurity",
-    "name": "Cybersecurity",
+    "slug": "inverter-design",
+    "name": "Inverter Design",
     "capacity": 20,
-    "generalPrice": 143000
-  },
-  {
-    "slug": "hardware-embedded-systems",
-    "name": "Hardware and Embedded Systems",
-    "capacity": 20,
-    "generalPrice": 120000
+    "generalPrice": 94000,
+    "durationWeeks": 8,
+    "has_subcourses": false,
+    "price": 94000
   },
   {
     "slug": "graphics-3d",
-    "name": "Graphics and 3D",
+    "name": "Graphic Design",
     "capacity": 20,
-    "generalPrice": 300000
+    "generalPrice": 64000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "adobe-illustrator", "name": "Adobe Illustrator", "durationWeeks": 4, "price_options": { "physical": 64000, "virtual": 92000 } },
+      { "slug": "adobe-photoshop", "name": "Adobe Photoshop", "durationWeeks": 4, "price_options": { "physical": 64000, "virtual": 92000 } },
+      { "slug": "adobe-indesign", "name": "Adobe In-design", "durationWeeks": 4, "price_options": { "physical": 64000, "virtual": 92000 } }
+    ]
+  },
+  {
+    "slug": "video-editing",
+    "name": "Video Editing",
+    "capacity": 20,
+    "generalPrice": 64000,
+    "durationWeeks": 4,
+    "has_subcourses": false,
+    "price_options": { "physical": 64000, "virtual": 92000 }
+  },
+  {
+    "slug": "motion-graphics",
+    "name": "Motion Graphics (Adobe After Effect)",
+    "capacity": 20,
+    "generalPrice": 64000,
+    "durationWeeks": 4,
+    "has_subcourses": false,
+    "price_options": { "physical": 64000, "virtual": 92000 }
+  },
+  {
+    "slug": "programming",
+    "name": "Programming",
+    "capacity": 20,
+    "generalPrice": 100000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "cpp", "name": "C/C++", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } },
+      { "slug": "java", "name": "Java", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } },
+      { "slug": "python", "name": "Python", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } },
+      { "slug": "javascript", "name": "JavaScript", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } },
+      { "slug": "matlab", "name": "MATLAB", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } }
+    ]
+  },
+  {
+    "slug": "web-design-development",
+    "name": "Web Design and Development",
+    "capacity": 20,
+    "generalPrice": 100000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "ui-ux-design", "name": "UI/UX Design (Adobe XD, Figma)", "durationWeeks": 16, "price_options": { "physical": 124000, "virtual": 182000 } },
+      { "slug": "frontend-design", "name": "Frontend Design", "durationWeeks": 8, "price_options": { "physical": 100000, "virtual": 150000 } },
+      { "slug": "backend-developer", "name": "Backend Developer", "durationWeeks": 16, "price_options": { "physical": 150000, "virtual": 200000 } }
+    ]
+  },
+  {
+    "slug": "hardware-embedded-systems",
+    "name": "Embedded Systems",
+    "capacity": 20,
+    "generalPrice": 104000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "basic-electronics-design-implementation", "name": "Basic Electronics Design and Implementation", "durationWeeks": 8, "price_options": { "physical": 104000, "virtual": 200000 } },
+      { "slug": "embedded-system-basics", "name": "Embedded System - Basics", "durationWeeks": 8, "price_options": { "physical": 154000, "virtual": 250000 } },
+      { "slug": "advanced-embedded-systems", "name": "Advanced Embedded Systems Design and Development", "durationWeeks": 16, "price_options": { "physical": 250000, "virtual": 300000 } }
+    ]
+  },
+  {
+    "slug": "iot-display-board",
+    "name": "IoT Display Board",
+    "capacity": 20,
+    "generalPrice": 200000,
+    "durationWeeks": 12,
+    "has_subcourses": false,
+    "price_options": { "physical": 200000, "virtual": 250000 }
+  },
+  {
+    "slug": "solar-system-design-installation",
+    "name": "Solar System Design and Installation",
+    "capacity": 20,
+    "generalPrice": 74000,
+    "durationWeeks": 4,
+    "has_subcourses": false,
+    "price": 74000
+  },
+  {
+    "slug": "advanced-solar-inverter-installation",
+    "name": "Advanced Solar / Inverter Design and System Installation",
+    "capacity": 20,
+    "generalPrice": 154000,
+    "durationWeeks": 8,
+    "has_subcourses": false,
+    "price": 154000
+  },
+  {
+    "slug": "advance-excel",
+    "name": "Advance Excel",
+    "capacity": 20,
+    "generalPrice": 204000,
+    "durationWeeks": 16,
+    "has_subcourses": false,
+    "price": 204000
+  },
+  {
+    "slug": "ai-automation",
+    "name": "AI Automation",
+    "capacity": 20,
+    "generalPrice": 104000,
+    "durationWeeks": 8,
+    "has_subcourses": false,
+    "price": 104000
+  },
+  {
+    "slug": "software-development",
+    "name": "Software Development",
+    "capacity": 20,
+    "generalPrice": 64000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "desktop-application", "name": "Desktop Application", "durationWeeks": 16, "price_options": { "physical": 154000, "virtual": 202000 } },
+      { "slug": "mobile-app-beginner", "name": "Mobile Application - Beginner (Appybuilder)", "durationWeeks": 4, "price_options": { "physical": 64000, "virtual": 102000 } },
+      { "slug": "mobile-app-advanced", "name": "Mobile Application - Advanced (Android Studio)", "durationWeeks": 12, "price_options": { "physical": 154000, "virtual": 202000 } }
+    ]
+  },
+  {
+    "slug": "data-science-analysis",
+    "name": "Data Science and Analysis",
+    "capacity": 20,
+    "generalPrice": 200000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "data-analytics", "name": "Data Analytics", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } },
+      { "slug": "data-science", "name": "Data Science", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } },
+      { "slug": "data-engineering", "name": "Data Engineering", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } }
+    ]
+  },
+  {
+    "slug": "software-engineering",
+    "name": "Software Engineering",
+    "capacity": 20,
+    "generalPrice": 200000,
+    "durationWeeks": 16,
+    "has_subcourses": false,
+    "price_options": { "physical": 200000, "virtual": 250000 }
+  },
+  {
+    "slug": "artificial-intelligence",
+    "name": "Artificial Intelligence",
+    "capacity": 20,
+    "generalPrice": 200000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "artificial-intelligence-foundations", "name": "Artificial Intelligence", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } },
+      { "slug": "machine-learning", "name": "Machine Learning", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } },
+      { "slug": "ai-data-science", "name": "Data Science", "durationWeeks": 16, "price_options": { "physical": 200000, "virtual": 250000 } }
+    ]
+  },
+  {
+    "slug": "3d-modelling-animation",
+    "name": "3D Modelling and Animation",
+    "capacity": 20,
+    "generalPrice": 250000,
+    "durationWeeks": 24,
+    "has_subcourses": false,
+    "price_options": { "physical": 250000, "virtual": 300000 }
+  },
+  {
+    "slug": "cybersecurity",
+    "name": "Cyber Security",
+    "capacity": 20,
+    "generalPrice": 250000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "networking", "name": "Networking", "durationWeeks": 8, "price_options": { "physical": 250000, "virtual": 300000 } },
+      { "slug": "ethical-hacking", "name": "Ethical Hacking", "durationWeeks": 6, "price_options": { "physical": 250000, "virtual": 300000 } },
+      { "slug": "security", "name": "Security", "durationWeeks": 6, "price_options": { "physical": 250000, "virtual": 300000 } }
+    ]
+  },
+  {
+    "slug": "autocad",
+    "name": "AutoCAD",
+    "capacity": 20,
+    "generalPrice": 74000,
+    "has_subcourses": true,
+    "subcourses": [
+      { "slug": "autocad-electrical", "name": "AutoCAD for Electrical Engineering", "durationWeeks": 8, "price": 74000 },
+      { "slug": "autocad-mechanical", "name": "AutoCAD for Mechanical Engineering", "durationWeeks": 8, "price": 74000 }
+    ]
+  },
+  {
+    "slug": "faceless-ai",
+    "name": "Faceless AI",
+    "capacity": 20,
+    "generalPrice": 154000,
+    "durationWeeks": 8,
+    "has_subcourses": false,
+    "price": 154000
   }
 ]

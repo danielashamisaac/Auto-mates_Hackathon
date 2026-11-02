@@ -50,11 +50,13 @@ export default function CaptureForm() {
           institution: form.institution,
           matricNo: form.matricNo,
           itDuration: form.itDuration,
+          course_selection: state.courseSelection,
         }
       : {
           gender: form.gender,
           dob: form.dob,
           address: form.address,
+          course_selection: state.courseSelection,
         };
 
     setSubmitting(true);
@@ -101,7 +103,7 @@ export default function CaptureForm() {
       <div className="page-header">
         <div>
           <h1>Step 4 · Your details</h1>
-          <p>{isIT ? 'IT Student' : 'General Student'} · {state.department.name}</p>
+          <p>{isIT ? 'IT Student' : 'General Student'} · {state.department.name}{state.courseSelection?.selected_subcourse_name ? ` · ${state.courseSelection.selected_subcourse_name}` : ''}</p>
         </div>
         <button className="btn btn-ghost" onClick={() => navigate('/capture/eligibility')}>
           <ArrowLeft size={14} /> Back
@@ -109,6 +111,12 @@ export default function CaptureForm() {
       </div>
 
       <StepIndicator steps={STEPS} activeIndex={3} />
+
+      {state.courseSelection && (
+        <div className="warning-banner course-selection-summary">
+          <span>{state.courseSelection.class_type ? `${state.courseSelection.class_type} class · ` : ''}{state.courseSelection.duration_weeks ? `${state.courseSelection.duration_weeks} weeks · ` : ''}Course fee: NGN {Number(state.courseSelection.amount).toLocaleString('en-NG')}</span>
+        </div>
+      )}
 
       <form className="glass" onSubmit={submit}>
         <div className="form-grid">
@@ -168,7 +176,7 @@ export default function CaptureForm() {
           <div className="text-dim" style={{ fontSize: 13 }}>
             By submitting you confirm the details above are correct. Fee:{' '}
             <strong style={{ color: 'var(--text)' }}>
-              NGN {state.category === 'IT' ? '22,000' : state.department.generalPrice.toLocaleString('en-NG')}
+              NGN {Number(state.courseSelection?.amount ?? (state.category === 'IT' ? 22000 : state.department.generalPrice)).toLocaleString('en-NG')}
             </strong>
           </div>
           <button className="btn btn-primary" type="submit" disabled={submitting}>

@@ -15,6 +15,8 @@ automate-mvp/
 
 - Python 3.10 or newer (Windows users: install from python.org and tick "Add to PATH").
 - Node.js 18+ (https://nodejs.org).
+- Tesseract OCR installed on the backend host for scanned forms. Add `tesseract.exe` to
+  `PATH`, or set `TESSERACT_CMD` to its full path.
 - Nothing else — payment is a self-contained visual prototype, no Paystack account
   or API keys needed.
 
@@ -66,8 +68,8 @@ Three portal actions: **Student Capturing**, **Payment Portal**, **Admin Portal*
    Graphics ₦300k).
 2. **Department** — Live capacity check; full departments are visibly blocked with a
    "Department Full — Please select another program" warning.
-3. **Eligibility test** — 10 multiple-choice questions specific to the chosen
-   department. Pass mark 60%, maximum 3 attempts. A **Reset Attempts** button on
+3. **Eligibility test** — 20 multiple-choice questions for the chosen department.
+  Pass mark 60%, maximum 3 attempts. A **Reset Attempts** button on
    screen generates a fresh candidate ID for live demos.
 4. **Bio-data form** — Category-specific fields. IT collects institution name, matric
    number, IT duration. General collects gender, DOB, address.
@@ -84,9 +86,30 @@ reference (format `AUT-YYYY-XXXX`).
 Login-protected (`admin` / `admin123`). Live metrics:
 - Total Registered, Total Revenue (₦), IT Students, General Students.
 - Per-department breakdown with **editable capacity** (Save button per row).
+- **Registration pricing** controls: one IT unified price across every course, plus
+  per-course or per-mode General Student prices. Registration amounts are verified
+  against the server-side catalog before a student record is created.
+- Department-specific eligibility question banks with admin controls to view, add,
+  edit, and delete questions while retaining 20 active questions per test.
 - Registered candidates table with search and category filter.
 - **Export Records as CSV** button at the bottom of the page — produces
   `automate-students-YYYY-MM-DD.csv` directly to the admin's device.
+
+### Import existing registrations
+Administrators can upload CSV, `.xlsx`, scanned PDF, and PNG/JPG/TIFF/WEBP image files.
+Spreadsheets and each scanned PDF page are staged as records; scanned pages are OCR'd
+with Tesseract and labeled fields are prefilled when recognized. Reviewers can compare
+the original document with the extracted text, correct fields, and inspect validation
+and duplicate errors before approval. Scanned records are approved individually, while
+valid spreadsheet rows can be imported together. Approved scan records retain an
+authenticated link to the archived original document on the student profile.
+
+Scans are archived under `backend/import_archive` by default. Set `IMPORT_ARCHIVE_DIR`
+to a durable, access-controlled volume in hosted deployments; the archive volume must
+be backed up alongside the database. PDF uploads are limited to 20 pages and 20 MB;
+spreadsheet uploads remain limited to 1,000 rows and 10 MB. OCR field prefill depends
+on recognizable printed labels and should always be checked by a reviewer, especially
+for handwriting.
 
 ---
 

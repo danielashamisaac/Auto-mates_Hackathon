@@ -40,9 +40,12 @@ def _slots_remaining(db: Session, slug: str) -> int:
 @router.post("/start", response_model=StartEligibilityOut)
 def start(payload: StartEligibilityIn, db: Session = Depends(get_db)):
     dept = _department_or_404(db, payload.departmentSlug)
-    questions = QUESTIONS_BY_DEPARTMENT.get(dept.slug)
-    if not questions:
-        raise HTTPException(status_code=500, detail="No questions configured for department")
+    questions = [
+        question for question in QUESTIONS_BY_DEPARTMENT.get(dept.slug, [])
+        if question.get("active", True)
+    ]
+    if len(questions) != 20:
+        raise HTTPException(status_code=500, detail="Exactly 20 eligibility questions must be configured for this department")
 
     if _slots_remaining(db, dept.slug) == 0:
         raise HTTPException(status_code=409, detail="Department is full")
@@ -75,9 +78,12 @@ def start(payload: StartEligibilityIn, db: Session = Depends(get_db)):
 @router.post("/submit", response_model=SubmitEligibilityOut)
 def submit(payload: SubmitEligibilityIn, db: Session = Depends(get_db)):
     dept = _department_or_404(db, payload.departmentSlug)
-    questions = QUESTIONS_BY_DEPARTMENT.get(dept.slug)
-    if not questions:
-        raise HTTPException(status_code=500, detail="No questions configured for department")
+    questions = [
+        question for question in QUESTIONS_BY_DEPARTMENT.get(dept.slug, [])
+        if question.get("active", True)
+    ]
+    if len(questions) != 20:
+        raise HTTPException(status_code=500, detail="Exactly 20 eligibility questions must be configured for this department")
 
     used = _attempts_used(db, payload.candidateId, dept.slug)
     if used >= MAX_ATTEMPTS:

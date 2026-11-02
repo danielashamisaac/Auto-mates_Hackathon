@@ -5,18 +5,27 @@ from database import get_db
 from models import Department, Attempt, Student
 from schemas import StudentCreateIn, StudentCreateOut, StudentOut
 from utils import generate_reg_no
+from catalog import get_it_unified_price, resolve_course_price
 
 router = APIRouter(prefix="/api/students", tags=["students"])
 
-IT_FLAT_PRICE = 22000
-
-
-def _resolve_amount(db: Session, department_slug: str, category: str) -> tuple[Department, int]:
+def _resolve_amount(db: Session, department_slug: str, category: str, extra: dict) -> tuple[Department, int]:
     d = db.query(Department).filter(Department.slug == department_slug).first()
     if not d:
         raise HTTPException(status_code=404, detail="Department not found")
+    course_selection = extra.get("course_selection")
+    if course_selection is not None:
+        resolved = resolve_course_price(department_slug, course_selection)
+        if not resolved:
+            raise HTTPException(status_code=400, detail="Selected course or class type is invalid for this department")
+        if category == "IT":
+            return d, get_it_unified_price()
+        if category != "GENERAL":
+            raise HTTPException(status_code=400, detail="category must be IT or GENERAL")
+        _, amount = resolved
+        return d, amount
     if category == "IT":
-        return d, IT_FLAT_PRICE
+        return d, get_it_unified_price()
     if category == "GENERAL":
         return d, d.general_price
     raise HTTPException(status_code=400, detail="category must be IT or GENERAL")
@@ -24,7 +33,8 @@ def _resolve_amount(db: Session, department_slug: str, category: str) -> tuple[D
 
 @router.post("", response_model=StudentCreateOut)
 def create_student(payload: StudentCreateIn, db: Session = Depends(get_db)):
-    dept, amount = _resolve_amount(db, payload.departmentSlug, payload.category)
+    extra = payload.extra or {}
+    dept, amount = _resolve_amount(db, payload.departmentSlug, payload.category, extra)
 
     passed = db.query(Attempt).filter(
         Attempt.candidate_id == payload.candidateId,
@@ -65,7 +75,7 @@ def create_student(payload: StudentCreateIn, db: Session = Depends(get_db)):
         full_name=payload.fullName,
         email=payload.email,
         phone=payload.phone,
-        extra_json=json.dumps(payload.extra or {}),
+        extra_json=json.dumps(extra),
         amount=total_amount,
         paid=0,
     )

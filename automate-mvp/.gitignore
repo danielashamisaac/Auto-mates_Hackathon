@@ -13,6 +13,7 @@ frontend/.env
 backend/automate.db
 backend/automate.db-wal
 backend/automate.db-shm
+backend/import_archive/
 
 # Node
 frontend/node_modules/

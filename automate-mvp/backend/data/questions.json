@@ -1,50 +1,5108 @@
 {
-  "data-science-analysis": [
-    {"q": "What does 'CSV' stand for?", "options": ["Comma Separated Values", "Computer System Value", "Central Storage Volume", "Coded String Variable"], "answer": 0},
-    {"q": "Which of these is a programming language commonly used for data analysis?", "options": ["HTML", "Python", "CSS", "SQL Server Management"], "answer": 1},
-    {"q": "What is the primary purpose of a spreadsheet like Excel?", "options": ["Video editing", "Organizing and calculating data", "Web hosting", "Sending emails"], "answer": 1},
-    {"q": "In statistics, what does 'average' (mean) represent?", "options": ["The most frequent value", "The middle value", "The sum of values divided by their count", "The largest value"], "answer": 2},
-    {"q": "What is a database used for?", "options": ["Storing and organizing structured data", "Designing logos", "Browsing the internet", "Playing media files"], "answer": 0},
-    {"q": "Which chart type is best for showing a trend over time?", "options": ["Pie chart", "Line chart", "Scatter chart only", "None of the above"], "answer": 1},
-    {"q": "What does 'data cleaning' mean?", "options": ["Deleting a computer's hard drive", "Fixing errors and inconsistencies in a dataset", "Formatting a document", "Installing antivirus software"], "answer": 1},
-    {"q": "Which of these is a common file format for storing tabular data?", "options": [".mp3", ".csv", ".exe", ".png"], "answer": 1},
-    {"q": "What is a 'variable' in data analysis?", "options": ["A fixed constant number", "A characteristic or attribute that can be measured", "A type of chart", "A computer virus"], "answer": 1},
-    {"q": "Which skill is most useful when interpreting data results?", "options": ["Critical thinking", "Graphic design only", "Typing speed", "Video editing"], "answer": 0}
+  "computer-appreciation": [
+    {
+      "q": "Before starting a Diploma in Computer Appreciation task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Diploma in Computer Appreciation?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-02"
+    },
+    {
+      "q": "Why should working files for Diploma in Computer Appreciation be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-03"
+    },
+    {
+      "q": "What is a good way to check a Diploma in Computer Appreciation result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-04"
+    },
+    {
+      "q": "When a Diploma in Computer Appreciation result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Diploma in Computer Appreciation work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Diploma in Computer Appreciation project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Diploma in Computer Appreciation work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Diploma in Computer Appreciation?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-09"
+    },
+    {
+      "q": "What should be included when handing off Diploma in Computer Appreciation work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-10"
+    },
+    {
+      "q": "How can errors in a Diploma in Computer Appreciation project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Diploma in Computer Appreciation work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "computer-appreciation-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Diploma in Computer Appreciation work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Diploma in Computer Appreciation task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Diploma in Computer Appreciation work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Diploma in Computer Appreciation project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Diploma in Computer Appreciation work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Diploma in Computer Appreciation deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Diploma in Computer Appreciation work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Diploma in Computer Appreciation task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "computer-appreciation-q-20"
+    },
+    {
+      "id": "b3cba1f8da2441269b81c713e43a6a4c",
+      "q": "Temporary test replacement",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 1,
+      "active": false
+    }
   ],
-  "cybersecurity": [
-    {"q": "What does 'password' protect?", "options": ["Access to an account or system", "The speed of a computer", "The color of a screen", "Internet speed"], "answer": 0},
-    {"q": "What is a 'firewall' used for?", "options": ["Cooling a computer", "Blocking unauthorized network access", "Printing documents", "Playing games"], "answer": 1},
-    {"q": "What does 'phishing' mean?", "options": ["A type of fishing sport", "Tricking someone into revealing sensitive information", "A programming language", "A hardware component"], "answer": 1},
-    {"q": "What is malware?", "options": ["Malicious software designed to cause harm", "A type of keyboard", "A safe system update", "A design tool"], "answer": 0},
-    {"q": "Why is it recommended to use strong, unique passwords?", "options": ["To make them easier to forget", "To reduce the risk of unauthorized access", "To slow down the computer", "It has no real benefit"], "answer": 1},
-    {"q": "What does 'encryption' do to data?", "options": ["Deletes it permanently", "Converts it into a coded form to prevent unauthorized access", "Makes it load faster", "Compresses it for storage only"], "answer": 1},
-    {"q": "What is two-factor authentication (2FA)?", "options": ["Using two different computers", "An extra layer of security requiring a second verification step", "A type of virus", "A backup hard drive"], "answer": 1},
-    {"q": "What should you do if you receive a suspicious email link?", "options": ["Click it immediately", "Avoid clicking and verify the sender first", "Forward it to everyone", "Reply with your password"], "answer": 1},
-    {"q": "What is a VPN mainly used for?", "options": ["Speeding up gaming graphics", "Creating a private, secure network connection over the internet", "Editing photos", "Formatting hard drives"], "answer": 1},
-    {"q": "What does 'social engineering' refer to in security?", "options": ["Building physical structures", "Manipulating people into giving up confidential information", "A type of software license", "A networking cable standard"], "answer": 1}
-  ],
-  "hardware-embedded-systems": [
-    {"q": "What does 'CPU' stand for?", "options": ["Central Processing Unit", "Computer Personal Unit", "Central Program Utility", "Core Processing Utility"], "answer": 0},
-    {"q": "Which of these is an example of computer hardware?", "options": ["An operating system", "A keyboard", "A word processor app", "A web browser"], "answer": 1},
-    {"q": "What is RAM primarily used for?", "options": ["Permanent long-term storage", "Temporary storage for actively used data", "Displaying graphics only", "Connecting to the internet"], "answer": 1},
-    {"q": "What is an embedded system?", "options": ["A general-purpose desktop computer", "A dedicated computer system built into a larger device", "A type of software license", "A social media platform"], "answer": 1},
-    {"q": "Which tool is commonly used to assemble or repair electronic circuits?", "options": ["Soldering iron", "Paintbrush", "Word processor", "Web browser"], "answer": 0},
-    {"q": "What does 'microcontroller' refer to?", "options": ["A small computer on a single chip used to control devices", "A type of monitor", "A wireless router", "A printer driver"], "answer": 0},
-    {"q": "Which of these is an input device?", "options": ["Monitor", "Speaker", "Keyboard", "Printer"], "answer": 2},
-    {"q": "What is the function of a motherboard?", "options": ["Storing printed documents", "Connecting and allowing communication between hardware components", "Displaying video only", "Cooling the room"], "answer": 1},
-    {"q": "What precaution helps prevent damage from static electricity when handling hardware?", "options": ["Wearing an anti-static wrist strap", "Working near water", "Touching the screen first", "Removing all safety gear"], "answer": 0},
-    {"q": "What does 'GPIO' commonly stand for in embedded systems?", "options": ["General Purpose Input/Output", "Global Processor Input Order", "Graphics Processing Input/Output", "General Program Interface Object"], "answer": 0}
+  "inverter-design": [
+    {
+      "q": "Before starting a Inverter Design task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Inverter Design?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-02"
+    },
+    {
+      "q": "Why should working files for Inverter Design be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-03"
+    },
+    {
+      "q": "What is a good way to check a Inverter Design result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-04"
+    },
+    {
+      "q": "When a Inverter Design result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Inverter Design work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Inverter Design project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Inverter Design work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Inverter Design?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-09"
+    },
+    {
+      "q": "What should be included when handing off Inverter Design work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-10"
+    },
+    {
+      "q": "How can errors in a Inverter Design project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Inverter Design work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "inverter-design-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Inverter Design work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Inverter Design task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Inverter Design work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Inverter Design project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Inverter Design work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Inverter Design deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Inverter Design work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Inverter Design task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "inverter-design-q-20"
+    }
   ],
   "graphics-3d": [
-    {"q": "What does '3D modeling' refer to?", "options": ["Creating a three-dimensional digital representation of an object", "Editing a text document", "Compressing audio files", "Writing code comments"], "answer": 0},
-    {"q": "Which of these is commonly used for digital image editing?", "options": ["A spreadsheet program", "A graphics/image editing software", "A network router", "A database engine"], "answer": 1},
-    {"q": "In 3D software, what is a 'vertex'?", "options": ["A type of light source", "A single point in 3D space used to build geometry", "A rendering preset", "A color channel"], "answer": 1},
-    {"q": "What does 'rendering' mean in computer graphics?", "options": ["Deleting a file", "Generating an image from a 3D model", "Compressing a video", "Installing drivers"], "answer": 1},
-    {"q": "Which file format is commonly used for 3D models?", "options": [".docx", ".obj", ".mp3", ".txt"], "answer": 1},
-    {"q": "What does 'UV mapping' refer to?", "options": ["Network security scanning", "Applying a 2D texture to a 3D model surface", "Audio mixing", "CPU profiling"], "answer": 1},
-    {"q": "Which property controls how light reflects off a surface in 3D software?", "options": ["Material / shader", "Font size", "Frame rate", "Network latency"], "answer": 0},
-    {"q": "What is 'ray tracing' used for?", "options": ["Drawing with a graphics tablet", "Simulating realistic lighting in renders", "Writing CSS", "Installing antivirus"], "answer": 1},
-    {"q": "What is a 'polygon' in 3D modeling?", "options": ["A flat shape made of vertices and edges that forms part of a 3D surface", "A type of network cable", "A sound effect preset", "An image filter"], "answer": 0},
-    {"q": "Why do 3D artists use 'reference images'?", "options": ["To make their files smaller", "To guide proportions, lighting and details for an accurate model", "To encrypt their scenes", "To speed up the CPU"], "answer": 1}
+    {
+      "q": "What does '3D modeling' refer to?",
+      "options": [
+        "Creating a three-dimensional digital representation of an object",
+        "Editing a text document",
+        "Compressing audio files",
+        "Writing code comments"
+      ],
+      "answer": 0,
+      "id": "graphics-3d-q-01",
+      "active": true
+    },
+    {
+      "q": "Which of these is commonly used for digital image editing?",
+      "options": [
+        "A spreadsheet program",
+        "A graphics/image editing software",
+        "A network router",
+        "A database engine"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-02",
+      "active": true
+    },
+    {
+      "q": "In 3D software, what is a 'vertex'?",
+      "options": [
+        "A type of light source",
+        "A single point in 3D space used to build geometry",
+        "A rendering preset",
+        "A color channel"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-03",
+      "active": true
+    },
+    {
+      "q": "What does 'rendering' mean in computer graphics?",
+      "options": [
+        "Deleting a file",
+        "Generating an image from a 3D model",
+        "Compressing a video",
+        "Installing drivers"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-04",
+      "active": true
+    },
+    {
+      "q": "Which file format is commonly used for 3D models?",
+      "options": [
+        ".docx",
+        ".obj",
+        ".mp3",
+        ".txt"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-05",
+      "active": true
+    },
+    {
+      "q": "What does 'UV mapping' refer to?",
+      "options": [
+        "Network security scanning",
+        "Applying a 2D texture to a 3D model surface",
+        "Audio mixing",
+        "CPU profiling"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-06",
+      "active": true
+    },
+    {
+      "q": "Which property controls how light reflects off a surface in 3D software?",
+      "options": [
+        "Material / shader",
+        "Font size",
+        "Frame rate",
+        "Network latency"
+      ],
+      "answer": 0,
+      "id": "graphics-3d-q-07",
+      "active": true
+    },
+    {
+      "q": "What is 'ray tracing' used for?",
+      "options": [
+        "Drawing with a graphics tablet",
+        "Simulating realistic lighting in renders",
+        "Writing CSS",
+        "Installing antivirus"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-08",
+      "active": true
+    },
+    {
+      "q": "What is a 'polygon' in 3D modeling?",
+      "options": [
+        "A flat shape made of vertices and edges that forms part of a 3D surface",
+        "A type of network cable",
+        "A sound effect preset",
+        "An image filter"
+      ],
+      "answer": 0,
+      "id": "graphics-3d-q-09",
+      "active": true
+    },
+    {
+      "q": "Why do 3D artists use 'reference images'?",
+      "options": [
+        "To make their files smaller",
+        "To guide proportions, lighting and details for an accurate model",
+        "To encrypt their scenes",
+        "To speed up the CPU"
+      ],
+      "answer": 1,
+      "id": "graphics-3d-q-10",
+      "active": true
+    },
+    {
+      "q": "How can errors in a Graphic Design project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Graphic Design work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "graphics-3d-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Graphic Design work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Graphic Design task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Graphic Design work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Graphic Design project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Graphic Design work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Graphic Design deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Graphic Design work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Graphic Design task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "graphics-3d-q-20"
+    }
+  ],
+  "video-editing": [
+    {
+      "q": "Before starting a Video Editing task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Video Editing?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-02"
+    },
+    {
+      "q": "Why should working files for Video Editing be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-03"
+    },
+    {
+      "q": "What is a good way to check a Video Editing result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-04"
+    },
+    {
+      "q": "When a Video Editing result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Video Editing work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Video Editing project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Video Editing work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Video Editing?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-09"
+    },
+    {
+      "q": "What should be included when handing off Video Editing work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-10"
+    },
+    {
+      "q": "How can errors in a Video Editing project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Video Editing work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "video-editing-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Video Editing work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Video Editing task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Video Editing work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Video Editing project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Video Editing work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Video Editing deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Video Editing work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Video Editing task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "video-editing-q-20"
+    }
+  ],
+  "motion-graphics": [
+    {
+      "q": "Before starting a Motion Graphics (Adobe After Effect) task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Motion Graphics (Adobe After Effect)?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-02"
+    },
+    {
+      "q": "Why should working files for Motion Graphics (Adobe After Effect) be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-03"
+    },
+    {
+      "q": "What is a good way to check a Motion Graphics (Adobe After Effect) result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-04"
+    },
+    {
+      "q": "When a Motion Graphics (Adobe After Effect) result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Motion Graphics (Adobe After Effect) work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Motion Graphics (Adobe After Effect) project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Motion Graphics (Adobe After Effect)?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-09"
+    },
+    {
+      "q": "What should be included when handing off Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-10"
+    },
+    {
+      "q": "How can errors in a Motion Graphics (Adobe After Effect) project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "motion-graphics-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Motion Graphics (Adobe After Effect) work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Motion Graphics (Adobe After Effect) task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Motion Graphics (Adobe After Effect) project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Motion Graphics (Adobe After Effect) deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Motion Graphics (Adobe After Effect) work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Motion Graphics (Adobe After Effect) task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "motion-graphics-q-20"
+    }
+  ],
+  "programming": [
+    {
+      "q": "Before starting a Programming task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Programming?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-02"
+    },
+    {
+      "q": "Why should working files for Programming be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-03"
+    },
+    {
+      "q": "What is a good way to check a Programming result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-04"
+    },
+    {
+      "q": "When a Programming result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Programming work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Programming project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Programming work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Programming?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-09"
+    },
+    {
+      "q": "What should be included when handing off Programming work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-10"
+    },
+    {
+      "q": "How can errors in a Programming project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Programming work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "programming-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Programming work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Programming task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Programming work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Programming project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Programming work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Programming deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Programming work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Programming task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "programming-q-20"
+    }
+  ],
+  "web-design-development": [
+    {
+      "q": "Before starting a Web Design and Development task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Web Design and Development?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-02"
+    },
+    {
+      "q": "Why should working files for Web Design and Development be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-03"
+    },
+    {
+      "q": "What is a good way to check a Web Design and Development result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-04"
+    },
+    {
+      "q": "When a Web Design and Development result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Web Design and Development work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Web Design and Development project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Web Design and Development work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Web Design and Development?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-09"
+    },
+    {
+      "q": "What should be included when handing off Web Design and Development work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-10"
+    },
+    {
+      "q": "How can errors in a Web Design and Development project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Web Design and Development work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "web-design-development-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Web Design and Development work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Web Design and Development task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Web Design and Development work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Web Design and Development project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Web Design and Development work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Web Design and Development deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Web Design and Development work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Web Design and Development task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "web-design-development-q-20"
+    }
+  ],
+  "hardware-embedded-systems": [
+    {
+      "q": "What does 'CPU' stand for?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Personal Unit",
+        "Central Program Utility",
+        "Core Processing Utility"
+      ],
+      "answer": 0,
+      "id": "hardware-embedded-systems-q-01",
+      "active": true
+    },
+    {
+      "q": "Which of these is an example of computer hardware?",
+      "options": [
+        "An operating system",
+        "A keyboard",
+        "A word processor app",
+        "A web browser"
+      ],
+      "answer": 1,
+      "id": "hardware-embedded-systems-q-02",
+      "active": true
+    },
+    {
+      "q": "What is RAM primarily used for?",
+      "options": [
+        "Permanent long-term storage",
+        "Temporary storage for actively used data",
+        "Displaying graphics only",
+        "Connecting to the internet"
+      ],
+      "answer": 1,
+      "id": "hardware-embedded-systems-q-03",
+      "active": true
+    },
+    {
+      "q": "What is an embedded system?",
+      "options": [
+        "A general-purpose desktop computer",
+        "A dedicated computer system built into a larger device",
+        "A type of software license",
+        "A social media platform"
+      ],
+      "answer": 1,
+      "id": "hardware-embedded-systems-q-04",
+      "active": true
+    },
+    {
+      "q": "Which tool is commonly used to assemble or repair electronic circuits?",
+      "options": [
+        "Soldering iron",
+        "Paintbrush",
+        "Word processor",
+        "Web browser"
+      ],
+      "answer": 0,
+      "id": "hardware-embedded-systems-q-05",
+      "active": true
+    },
+    {
+      "q": "What does 'microcontroller' refer to?",
+      "options": [
+        "A small computer on a single chip used to control devices",
+        "A type of monitor",
+        "A wireless router",
+        "A printer driver"
+      ],
+      "answer": 0,
+      "id": "hardware-embedded-systems-q-06",
+      "active": true
+    },
+    {
+      "q": "Which of these is an input device?",
+      "options": [
+        "Monitor",
+        "Speaker",
+        "Keyboard",
+        "Printer"
+      ],
+      "answer": 2,
+      "id": "hardware-embedded-systems-q-07",
+      "active": true
+    },
+    {
+      "q": "What is the function of a motherboard?",
+      "options": [
+        "Storing printed documents",
+        "Connecting and allowing communication between hardware components",
+        "Displaying video only",
+        "Cooling the room"
+      ],
+      "answer": 1,
+      "id": "hardware-embedded-systems-q-08",
+      "active": true
+    },
+    {
+      "q": "What precaution helps prevent damage from static electricity when handling hardware?",
+      "options": [
+        "Wearing an anti-static wrist strap",
+        "Working near water",
+        "Touching the screen first",
+        "Removing all safety gear"
+      ],
+      "answer": 0,
+      "id": "hardware-embedded-systems-q-09",
+      "active": true
+    },
+    {
+      "q": "What does 'GPIO' commonly stand for in embedded systems?",
+      "options": [
+        "General Purpose Input/Output",
+        "Global Processor Input Order",
+        "Graphics Processing Input/Output",
+        "General Program Interface Object"
+      ],
+      "answer": 0,
+      "id": "hardware-embedded-systems-q-10",
+      "active": true
+    },
+    {
+      "q": "How can errors in a Embedded Systems project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Embedded Systems work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "hardware-embedded-systems-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Embedded Systems work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Embedded Systems task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Embedded Systems work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Embedded Systems project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Embedded Systems work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Embedded Systems deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Embedded Systems work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Embedded Systems task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "hardware-embedded-systems-q-20"
+    }
+  ],
+  "iot-display-board": [
+    {
+      "q": "Before starting a IoT Display Board task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in IoT Display Board?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-02"
+    },
+    {
+      "q": "Why should working files for IoT Display Board be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-03"
+    },
+    {
+      "q": "What is a good way to check a IoT Display Board result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-04"
+    },
+    {
+      "q": "When a IoT Display Board result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-05"
+    },
+    {
+      "q": "How should personal information encountered during IoT Display Board work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a IoT Display Board project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to IoT Display Board work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about IoT Display Board?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-09"
+    },
+    {
+      "q": "What should be included when handing off IoT Display Board work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-10"
+    },
+    {
+      "q": "How can errors in a IoT Display Board project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical IoT Display Board work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "iot-display-board-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for IoT Display Board work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a IoT Display Board task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for IoT Display Board work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a IoT Display Board project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on IoT Display Board work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-17"
+    },
+    {
+      "q": "What should be done before sharing a IoT Display Board deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in IoT Display Board work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed IoT Display Board task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "iot-display-board-q-20"
+    }
+  ],
+  "solar-system-design-installation": [
+    {
+      "q": "Before starting a Solar System Design and Installation task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Solar System Design and Installation?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-02"
+    },
+    {
+      "q": "Why should working files for Solar System Design and Installation be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-03"
+    },
+    {
+      "q": "What is a good way to check a Solar System Design and Installation result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-04"
+    },
+    {
+      "q": "When a Solar System Design and Installation result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Solar System Design and Installation work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Solar System Design and Installation project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Solar System Design and Installation work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Solar System Design and Installation?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-09"
+    },
+    {
+      "q": "What should be included when handing off Solar System Design and Installation work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-10"
+    },
+    {
+      "q": "How can errors in a Solar System Design and Installation project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Solar System Design and Installation work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "solar-system-design-installation-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Solar System Design and Installation work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Solar System Design and Installation task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Solar System Design and Installation work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Solar System Design and Installation project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Solar System Design and Installation work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Solar System Design and Installation deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Solar System Design and Installation work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Solar System Design and Installation task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "solar-system-design-installation-q-20"
+    }
+  ],
+  "advanced-solar-inverter-installation": [
+    {
+      "q": "Before starting a Advanced Solar / Inverter Design and System Installation task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Advanced Solar / Inverter Design and System Installation?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-02"
+    },
+    {
+      "q": "Why should working files for Advanced Solar / Inverter Design and System Installation be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-03"
+    },
+    {
+      "q": "What is a good way to check a Advanced Solar / Inverter Design and System Installation result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-04"
+    },
+    {
+      "q": "When a Advanced Solar / Inverter Design and System Installation result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Advanced Solar / Inverter Design and System Installation work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Advanced Solar / Inverter Design and System Installation project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Advanced Solar / Inverter Design and System Installation?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-09"
+    },
+    {
+      "q": "What should be included when handing off Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-10"
+    },
+    {
+      "q": "How can errors in a Advanced Solar / Inverter Design and System Installation project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Advanced Solar / Inverter Design and System Installation work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Advanced Solar / Inverter Design and System Installation task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Advanced Solar / Inverter Design and System Installation project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Advanced Solar / Inverter Design and System Installation deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Advanced Solar / Inverter Design and System Installation work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Advanced Solar / Inverter Design and System Installation task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advanced-solar-inverter-installation-q-20"
+    }
+  ],
+  "advance-excel": [
+    {
+      "q": "Before starting a Advance Excel task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Advance Excel?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-02"
+    },
+    {
+      "q": "Why should working files for Advance Excel be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-03"
+    },
+    {
+      "q": "What is a good way to check a Advance Excel result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-04"
+    },
+    {
+      "q": "When a Advance Excel result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Advance Excel work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Advance Excel project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Advance Excel work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Advance Excel?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-09"
+    },
+    {
+      "q": "What should be included when handing off Advance Excel work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-10"
+    },
+    {
+      "q": "How can errors in a Advance Excel project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Advance Excel work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "advance-excel-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Advance Excel work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Advance Excel task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Advance Excel work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Advance Excel project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Advance Excel work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Advance Excel deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Advance Excel work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Advance Excel task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "advance-excel-q-20"
+    }
+  ],
+  "ai-automation": [
+    {
+      "q": "Before starting a AI Automation task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in AI Automation?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-02"
+    },
+    {
+      "q": "Why should working files for AI Automation be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-03"
+    },
+    {
+      "q": "What is a good way to check a AI Automation result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-04"
+    },
+    {
+      "q": "When a AI Automation result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-05"
+    },
+    {
+      "q": "How should personal information encountered during AI Automation work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a AI Automation project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to AI Automation work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about AI Automation?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-09"
+    },
+    {
+      "q": "What should be included when handing off AI Automation work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-10"
+    },
+    {
+      "q": "How can errors in a AI Automation project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical AI Automation work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "ai-automation-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for AI Automation work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a AI Automation task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for AI Automation work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a AI Automation project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on AI Automation work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-17"
+    },
+    {
+      "q": "What should be done before sharing a AI Automation deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in AI Automation work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed AI Automation task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "ai-automation-q-20"
+    }
+  ],
+  "software-development": [
+    {
+      "q": "Before starting a Software Development task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Software Development?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-02"
+    },
+    {
+      "q": "Why should working files for Software Development be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-03"
+    },
+    {
+      "q": "What is a good way to check a Software Development result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-04"
+    },
+    {
+      "q": "When a Software Development result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Software Development work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Software Development project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Software Development work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Software Development?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-09"
+    },
+    {
+      "q": "What should be included when handing off Software Development work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-10"
+    },
+    {
+      "q": "How can errors in a Software Development project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Software Development work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-development-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Software Development work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Software Development task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Software Development work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Software Development project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Software Development work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Software Development deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Software Development work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Software Development task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-development-q-20"
+    }
+  ],
+  "data-science-analysis": [
+    {
+      "q": "What does 'CSV' stand for?",
+      "options": [
+        "Comma Separated Values",
+        "Computer System Value",
+        "Central Storage Volume",
+        "Coded String Variable"
+      ],
+      "answer": 0,
+      "id": "data-science-analysis-q-01",
+      "active": true
+    },
+    {
+      "q": "Which of these is a programming language commonly used for data analysis?",
+      "options": [
+        "HTML",
+        "Python",
+        "CSS",
+        "SQL Server Management"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-02",
+      "active": true
+    },
+    {
+      "q": "What is the primary purpose of a spreadsheet like Excel?",
+      "options": [
+        "Video editing",
+        "Organizing and calculating data",
+        "Web hosting",
+        "Sending emails"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-03",
+      "active": true
+    },
+    {
+      "q": "In statistics, what does 'average' (mean) represent?",
+      "options": [
+        "The most frequent value",
+        "The middle value",
+        "The sum of values divided by their count",
+        "The largest value"
+      ],
+      "answer": 2,
+      "id": "data-science-analysis-q-04",
+      "active": true
+    },
+    {
+      "q": "What is a database used for?",
+      "options": [
+        "Storing and organizing structured data",
+        "Designing logos",
+        "Browsing the internet",
+        "Playing media files"
+      ],
+      "answer": 0,
+      "id": "data-science-analysis-q-05",
+      "active": true
+    },
+    {
+      "q": "Which chart type is best for showing a trend over time?",
+      "options": [
+        "Pie chart",
+        "Line chart",
+        "Scatter chart only",
+        "None of the above"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-06",
+      "active": true
+    },
+    {
+      "q": "What does 'data cleaning' mean?",
+      "options": [
+        "Deleting a computer's hard drive",
+        "Fixing errors and inconsistencies in a dataset",
+        "Formatting a document",
+        "Installing antivirus software"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-07",
+      "active": true
+    },
+    {
+      "q": "Which of these is a common file format for storing tabular data?",
+      "options": [
+        ".mp3",
+        ".csv",
+        ".exe",
+        ".png"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-08",
+      "active": true
+    },
+    {
+      "q": "What is a 'variable' in data analysis?",
+      "options": [
+        "A fixed constant number",
+        "A characteristic or attribute that can be measured",
+        "A type of chart",
+        "A computer virus"
+      ],
+      "answer": 1,
+      "id": "data-science-analysis-q-09",
+      "active": true
+    },
+    {
+      "q": "Which skill is most useful when interpreting data results?",
+      "options": [
+        "Critical thinking",
+        "Graphic design only",
+        "Typing speed",
+        "Video editing"
+      ],
+      "answer": 0,
+      "id": "data-science-analysis-q-10",
+      "active": true
+    },
+    {
+      "q": "How can errors in a Data Science and Analysis project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Data Science and Analysis work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "data-science-analysis-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Data Science and Analysis work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Data Science and Analysis task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Data Science and Analysis work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Data Science and Analysis project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Data Science and Analysis work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Data Science and Analysis deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Data Science and Analysis work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Data Science and Analysis task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "data-science-analysis-q-20"
+    }
+  ],
+  "software-engineering": [
+    {
+      "q": "Before starting a Software Engineering task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Software Engineering?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-02"
+    },
+    {
+      "q": "Why should working files for Software Engineering be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-03"
+    },
+    {
+      "q": "What is a good way to check a Software Engineering result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-04"
+    },
+    {
+      "q": "When a Software Engineering result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Software Engineering work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Software Engineering project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Software Engineering work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Software Engineering?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-09"
+    },
+    {
+      "q": "What should be included when handing off Software Engineering work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-10"
+    },
+    {
+      "q": "How can errors in a Software Engineering project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Software Engineering work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "software-engineering-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Software Engineering work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Software Engineering task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Software Engineering work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Software Engineering project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Software Engineering work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Software Engineering deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Software Engineering work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Software Engineering task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "software-engineering-q-20"
+    }
+  ],
+  "artificial-intelligence": [
+    {
+      "q": "Before starting a Artificial Intelligence task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Artificial Intelligence?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-02"
+    },
+    {
+      "q": "Why should working files for Artificial Intelligence be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-03"
+    },
+    {
+      "q": "What is a good way to check a Artificial Intelligence result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-04"
+    },
+    {
+      "q": "When a Artificial Intelligence result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Artificial Intelligence work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Artificial Intelligence project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Artificial Intelligence work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Artificial Intelligence?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-09"
+    },
+    {
+      "q": "What should be included when handing off Artificial Intelligence work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-10"
+    },
+    {
+      "q": "How can errors in a Artificial Intelligence project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Artificial Intelligence work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "artificial-intelligence-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Artificial Intelligence work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Artificial Intelligence task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Artificial Intelligence work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Artificial Intelligence project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Artificial Intelligence work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Artificial Intelligence deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Artificial Intelligence work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Artificial Intelligence task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "artificial-intelligence-q-20"
+    }
+  ],
+  "3d-modelling-animation": [
+    {
+      "q": "Before starting a 3D Modelling and Animation task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in 3D Modelling and Animation?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-02"
+    },
+    {
+      "q": "Why should working files for 3D Modelling and Animation be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-03"
+    },
+    {
+      "q": "What is a good way to check a 3D Modelling and Animation result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-04"
+    },
+    {
+      "q": "When a 3D Modelling and Animation result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-05"
+    },
+    {
+      "q": "How should personal information encountered during 3D Modelling and Animation work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a 3D Modelling and Animation project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to 3D Modelling and Animation work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about 3D Modelling and Animation?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-09"
+    },
+    {
+      "q": "What should be included when handing off 3D Modelling and Animation work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-10"
+    },
+    {
+      "q": "How can errors in a 3D Modelling and Animation project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical 3D Modelling and Animation work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "3d-modelling-animation-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for 3D Modelling and Animation work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a 3D Modelling and Animation task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for 3D Modelling and Animation work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a 3D Modelling and Animation project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on 3D Modelling and Animation work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-17"
+    },
+    {
+      "q": "What should be done before sharing a 3D Modelling and Animation deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in 3D Modelling and Animation work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed 3D Modelling and Animation task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "3d-modelling-animation-q-20"
+    },
+    {
+      "id": "9a7d13c7abee4624b37cf2fe96b2471e",
+      "q": "Temporary CRUD verification question",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answer": 2,
+      "active": false
+    }
+  ],
+  "cybersecurity": [
+    {
+      "q": "What does 'password' protect?",
+      "options": [
+        "Access to an account or system",
+        "The speed of a computer",
+        "The color of a screen",
+        "Internet speed"
+      ],
+      "answer": 0,
+      "id": "cybersecurity-q-01",
+      "active": true
+    },
+    {
+      "q": "What is a 'firewall' used for?",
+      "options": [
+        "Cooling a computer",
+        "Blocking unauthorized network access",
+        "Printing documents",
+        "Playing games"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-02",
+      "active": true
+    },
+    {
+      "q": "What does 'phishing' mean?",
+      "options": [
+        "A type of fishing sport",
+        "Tricking someone into revealing sensitive information",
+        "A programming language",
+        "A hardware component"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-03",
+      "active": true
+    },
+    {
+      "q": "What is malware?",
+      "options": [
+        "Malicious software designed to cause harm",
+        "A type of keyboard",
+        "A safe system update",
+        "A design tool"
+      ],
+      "answer": 0,
+      "id": "cybersecurity-q-04",
+      "active": true
+    },
+    {
+      "q": "Why is it recommended to use strong, unique passwords?",
+      "options": [
+        "To make them easier to forget",
+        "To reduce the risk of unauthorized access",
+        "To slow down the computer",
+        "It has no real benefit"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-05",
+      "active": true
+    },
+    {
+      "q": "What does 'encryption' do to data?",
+      "options": [
+        "Deletes it permanently",
+        "Converts it into a coded form to prevent unauthorized access",
+        "Makes it load faster",
+        "Compresses it for storage only"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-06",
+      "active": true
+    },
+    {
+      "q": "What is two-factor authentication (2FA)?",
+      "options": [
+        "Using two different computers",
+        "An extra layer of security requiring a second verification step",
+        "A type of virus",
+        "A backup hard drive"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-07",
+      "active": true
+    },
+    {
+      "q": "What should you do if you receive a suspicious email link?",
+      "options": [
+        "Click it immediately",
+        "Avoid clicking and verify the sender first",
+        "Forward it to everyone",
+        "Reply with your password"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-08",
+      "active": true
+    },
+    {
+      "q": "What is a VPN mainly used for?",
+      "options": [
+        "Speeding up gaming graphics",
+        "Creating a private, secure network connection over the internet",
+        "Editing photos",
+        "Formatting hard drives"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-09",
+      "active": true
+    },
+    {
+      "q": "What does 'social engineering' refer to in security?",
+      "options": [
+        "Building physical structures",
+        "Manipulating people into giving up confidential information",
+        "A type of software license",
+        "A networking cable standard"
+      ],
+      "answer": 1,
+      "id": "cybersecurity-q-10",
+      "active": true
+    },
+    {
+      "q": "How can errors in a Cyber Security project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Cyber Security work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "cybersecurity-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Cyber Security work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Cyber Security task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Cyber Security work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Cyber Security project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Cyber Security work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Cyber Security deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Cyber Security work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Cyber Security task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "cybersecurity-q-20"
+    }
+  ],
+  "autocad": [
+    {
+      "q": "Before starting a AutoCAD task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in AutoCAD?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-02"
+    },
+    {
+      "q": "Why should working files for AutoCAD be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-03"
+    },
+    {
+      "q": "What is a good way to check a AutoCAD result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-04"
+    },
+    {
+      "q": "When a AutoCAD result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-05"
+    },
+    {
+      "q": "How should personal information encountered during AutoCAD work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a AutoCAD project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to AutoCAD work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about AutoCAD?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-09"
+    },
+    {
+      "q": "What should be included when handing off AutoCAD work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-10"
+    },
+    {
+      "q": "How can errors in a AutoCAD project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical AutoCAD work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "autocad-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for AutoCAD work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a AutoCAD task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for AutoCAD work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a AutoCAD project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on AutoCAD work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-17"
+    },
+    {
+      "q": "What should be done before sharing a AutoCAD deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in AutoCAD work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed AutoCAD task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "autocad-q-20"
+    }
+  ],
+  "faceless-ai": [
+    {
+      "q": "Before starting a Faceless AI task, what should be clarified first?",
+      "options": [
+        "The required outcome and constraints",
+        "The final file name only",
+        "How to skip testing",
+        "How to avoid documenting work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-01"
+    },
+    {
+      "q": "Which is the best way to learn an unfamiliar tool used in Faceless AI?",
+      "options": [
+        "Guess at every control",
+        "Consult reliable documentation and test safely",
+        "Copy unverified settings",
+        "Ignore warnings"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-02"
+    },
+    {
+      "q": "Why should working files for Faceless AI be organized clearly?",
+      "options": [
+        "So work can be found, reviewed, and continued",
+        "To make files impossible to share",
+        "To remove the need for backups",
+        "To hide errors"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-03"
+    },
+    {
+      "q": "What is a good way to check a Faceless AI result?",
+      "options": [
+        "Assume it is correct",
+        "Compare it with the requirements and test it",
+        "Only check its file name",
+        "Delete the source files"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-04"
+    },
+    {
+      "q": "When a Faceless AI result is unexpected, what should you do first?",
+      "options": [
+        "Change many settings at once",
+        "Review inputs and repeat the steps systematically",
+        "Hide the result",
+        "Skip all checks"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-05"
+    },
+    {
+      "q": "How should personal information encountered during Faceless AI work be handled?",
+      "options": [
+        "Share it publicly",
+        "Use only what is needed and restrict access",
+        "Copy it to personal accounts",
+        "Keep it forever without a reason"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-06"
+    },
+    {
+      "q": "What makes feedback useful on a Faceless AI project?",
+      "options": [
+        "It identifies a specific issue and a possible improvement",
+        "It changes the goal without explanation",
+        "It avoids examples",
+        "It is given only after files are deleted"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-07"
+    },
+    {
+      "q": "Why keep a backup before making major changes to Faceless AI work?",
+      "options": [
+        "To recover the original if a change causes a problem",
+        "To increase the number of errors",
+        "To replace verification",
+        "To remove version history"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-08"
+    },
+    {
+      "q": "Which source is most dependable when checking a technical fact about Faceless AI?",
+      "options": [
+        "An unverified post",
+        "Official documentation or a trusted reference",
+        "A guess from memory",
+        "An unrelated advertisement"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-09"
+    },
+    {
+      "q": "What should be included when handing off Faceless AI work?",
+      "options": [
+        "The deliverable and clear notes about its status",
+        "Only an unexplained screenshot",
+        "A broken source file",
+        "No information about limitations"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-10"
+    },
+    {
+      "q": "How can errors in a Faceless AI project be reduced?",
+      "options": [
+        "Work in small steps and check results regularly",
+        "Make all changes at the end",
+        "Ignore test results",
+        "Avoid saving versions"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-11"
+    },
+    {
+      "q": "When should safety guidance be followed during practical Faceless AI work?",
+      "options": [
+        "Only after an incident",
+        "Before and throughout the task",
+        "Only when someone is watching",
+        "Never, if the task seems familiar"
+      ],
+      "answer": 1,
+      "active": true,
+      "id": "faceless-ai-q-12"
+    },
+    {
+      "q": "What is the best response when a requirement for Faceless AI work is unclear?",
+      "options": [
+        "Ask for clarification before making assumptions",
+        "Choose a random interpretation",
+        "Skip the requirement",
+        "Submit unrelated work"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-13"
+    },
+    {
+      "q": "Why is it useful to record important steps in a Faceless AI task?",
+      "options": [
+        "It helps another person review or reproduce the work",
+        "It prevents anyone from checking the result",
+        "It replaces the final deliverable",
+        "It makes the process less clear"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-14"
+    },
+    {
+      "q": "Which approach is best when selecting an export format for Faceless AI work?",
+      "options": [
+        "Choose a format that meets the recipient's needs",
+        "Always choose the largest file",
+        "Rename the extension without converting",
+        "Use a format the recipient cannot open"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-15"
+    },
+    {
+      "q": "How should a deadline be managed on a Faceless AI project?",
+      "options": [
+        "Break the work into steps and check progress",
+        "Wait until the final hour to begin",
+        "Skip review",
+        "Avoid estimating task time"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-16"
+    },
+    {
+      "q": "What is a sensible way to respond to a reviewer's correction on Faceless AI work?",
+      "options": [
+        "Check the feedback, make the needed change, and verify it",
+        "Delete the entire project",
+        "Ignore all comments",
+        "Change unrelated sections"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-17"
+    },
+    {
+      "q": "What should be done before sharing a Faceless AI deliverable?",
+      "options": [
+        "Check that it opens and contains the intended result",
+        "Remove all useful context",
+        "Share private source data unnecessarily",
+        "Assume the recipient has every required file"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-18"
+    },
+    {
+      "q": "Why is accessibility worth considering in Faceless AI work?",
+      "options": [
+        "It helps more people use and understand the result",
+        "It only changes the file size",
+        "It makes quality checks unnecessary",
+        "It prevents feedback"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-19"
+    },
+    {
+      "q": "What is a good final check for a completed Faceless AI task?",
+      "options": [
+        "Verify the deliverable, requirements, and supporting files",
+        "Delete drafts before checking the final",
+        "Rely only on memory",
+        "Skip the handoff"
+      ],
+      "answer": 0,
+      "active": true,
+      "id": "faceless-ai-q-20"
+    }
   ]
 }

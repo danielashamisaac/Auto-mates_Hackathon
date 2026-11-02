@@ -10,7 +10,7 @@ import seed
 
 seed.run()
 
-from routers import departments, eligibility, students, payment, admin
+from routers import departments, eligibility, students, payment, admin, imports
 
 app = FastAPI(
     title="AUTOMATE Hub Solution API",
@@ -51,3 +51,4 @@ app.include_router(eligibility.router)
 app.include_router(students.router)
 app.include_router(payment.router)
 app.include_router(admin.router)
+app.include_router(imports.router)

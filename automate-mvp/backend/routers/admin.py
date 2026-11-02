@@ -1,4 +1,5 @@
 from datetime import datetime
+from uuid import uuid4
 from fastapi import APIRouter, Cookie, Depends, HTTPException, Response, status
 from sqlalchemy.orm import Session
 from database import get_db
@@ -21,8 +22,134 @@ from auth import (
     clear_admin_cookie,
     admin_required,
 )
+from seed import MAX_ATTEMPTS, PASS_PERCENT, QUESTIONS_BY_DEPARTMENT, save_question_bank
+from catalog import get_it_unified_price, load_catalog, set_it_unified_price, update_general_course_price
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
+
+
+@router.get("/pricing", dependencies=[Depends(admin_required)])
+def get_pricing():
+    departments = []
+    for department in load_catalog():
+        raw_courses = department.get("subcourses", []) if department.get("has_subcourses") else [department]
+        departments.append({
+            "slug": department["slug"],
+            "name": department["name"],
+            "courses": [
+                {
+                    "slug": course.get("slug") if department.get("has_subcourses") else None,
+                    "name": course["name"],
+                    "durationWeeks": course.get("durationWeeks", department.get("durationWeeks")),
+                    "price": course.get("price", department.get("generalPrice")),
+                    "price_options": course.get("price_options"),
+                }
+                for course in raw_courses
+            ],
+        })
+    return {"itUnifiedPrice": get_it_unified_price(), "departments": departments}
+
+
+@router.put("/pricing/it", dependencies=[Depends(admin_required)])
+def update_it_pricing(payload: dict):
+    try:
+        amount = set_it_unified_price(payload.get("amount"))
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {"itUnifiedPrice": amount}
+
+
+@router.put("/pricing/general", dependencies=[Depends(admin_required)])
+def update_general_pricing(payload: dict):
+    try:
+        course = update_general_course_price(
+            payload.get("departmentSlug"),
+            payload.get("courseSlug"),
+            payload.get("classType"),
+            payload.get("amount"),
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {"success": True, "course": course}
+
+
+def _validated_question(payload):
+    if not isinstance(payload, dict):
+        raise HTTPException(status_code=400, detail="A question object is required.")
+    prompt = payload.get("q")
+    options = payload.get("options")
+    answer = payload.get("answer")
+    if not isinstance(prompt, str) or not prompt.strip() or len(prompt.strip()) > 500:
+        raise HTTPException(status_code=400, detail="Question text is required and must be 500 characters or fewer.")
+    if not isinstance(options, list) or len(options) != 4:
+        raise HTTPException(status_code=400, detail="Each question must have exactly four options.")
+    options = [option.strip() if isinstance(option, str) else "" for option in options]
+    if any(not option or len(option) > 240 for option in options):
+        raise HTTPException(status_code=400, detail="Each option is required and must be 240 characters or fewer.")
+    if isinstance(answer, bool) or not isinstance(answer, int) or answer not in range(4):
+        raise HTTPException(status_code=400, detail="The correct answer must be an option from 0 to 3.")
+    return {"q": prompt.strip(), "options": options, "answer": answer}
+
+
+def _question_bank_output(department_slug):
+    bank = QUESTIONS_BY_DEPARTMENT.get(department_slug)
+    if bank is None:
+        raise HTTPException(status_code=404, detail="Question bank not found for this department.")
+    return {
+        "department_slug": department_slug,
+        "required_count": 20,
+        "max_attempts": MAX_ATTEMPTS,
+        "pass_percent": PASS_PERCENT,
+        "questions": [
+            {**question, "position": index + 1, "active": index < 20}
+            for index, question in enumerate(bank)
+        ],
+    }
+
+
+@router.get("/departments/{department_slug}/questions", dependencies=[Depends(admin_required)])
+def get_department_questions(department_slug: str):
+    return _question_bank_output(department_slug)
+
+
+@router.post("/departments/{department_slug}/questions", dependencies=[Depends(admin_required)])
+def add_department_question(department_slug: str, payload: dict):
+    bank = QUESTIONS_BY_DEPARTMENT.get(department_slug)
+    if bank is None:
+        raise HTTPException(status_code=404, detail="Question bank not found for this department.")
+    if len(bank) >= 100:
+        raise HTTPException(status_code=409, detail="A question bank can contain at most 100 questions.")
+    question = {"id": uuid4().hex, **_validated_question(payload), "active": True}
+    save_question_bank(department_slug, [*bank, question])
+    return _question_bank_output(department_slug)
+
+
+@router.put("/departments/{department_slug}/questions/{question_id}", dependencies=[Depends(admin_required)])
+def edit_department_question(department_slug: str, question_id: str, payload: dict):
+    bank = QUESTIONS_BY_DEPARTMENT.get(department_slug)
+    if bank is None:
+        raise HTTPException(status_code=404, detail="Question bank not found for this department.")
+    index = next((index for index, item in enumerate(bank) if item["id"] == question_id), None)
+    if index is None:
+        raise HTTPException(status_code=404, detail="Question not found.")
+    updated = list(bank)
+    updated[index] = {"id": question_id, **_validated_question(payload), "active": bank[index].get("active", True)}
+    save_question_bank(department_slug, updated)
+    return _question_bank_output(department_slug)
+
+
+@router.delete("/departments/{department_slug}/questions/{question_id}", dependencies=[Depends(admin_required)])
+def delete_department_question(department_slug: str, question_id: str):
+    bank = QUESTIONS_BY_DEPARTMENT.get(department_slug)
+    if bank is None:
+        raise HTTPException(status_code=404, detail="Question bank not found for this department.")
+    if len(bank) <= 20:
+        raise HTTPException(status_code=409, detail="Add a replacement question before deleting; every test must keep 20 questions.")
+    updated = [question for question in bank if question["id"] != question_id]
+    if len(updated) == len(bank):
+        raise HTTPException(status_code=404, detail="Question not found.")
+    save_question_bank(department_slug, updated)
+    return _question_bank_output(department_slug)
 
 
 @router.post("/login", response_model=AdminLoginOut)
@@ -119,5 +246,6 @@ def all_students(db: Session = Depends(get_db)):
             "paid": bool(s.paid),
             "created_at": fmt(s.created_at),
             "paid_at": fmt(s.paid_at),
+            "source_document_url": f"/api/admin/imports/students/{s.id}/document" if s.source_document_key else None,
         })
     return out
