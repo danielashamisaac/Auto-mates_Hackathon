@@ -51,7 +51,12 @@ def ensure_tables():
     migrations = {
         "students": {"source_document_key": "VARCHAR"},
         "import_batches": {"document_key": "VARCHAR"},
-        "import_rows": {"source_text": "TEXT"},
+        "import_rows": {
+            "source_text": "TEXT",
+            "ocr_provider": "VARCHAR",
+            "ocr_confidence": "FLOAT",
+            "ocr_warning": "TEXT",
+        },
     }
     with engine.begin() as connection:
         inspector = inspect(connection)

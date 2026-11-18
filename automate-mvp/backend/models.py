@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, DateTime, Text
+from sqlalchemy import Column, Float, ForeignKey, Integer, String, DateTime, Text
 from sqlalchemy.sql import func
 from database import Base
 
@@ -70,3 +70,6 @@ class ImportRow(Base):
     reviewed_by = Column(String, nullable=True)
     reviewed_at = Column(DateTime, nullable=True)
     source_text = Column(Text, nullable=True)
+    ocr_provider = Column(String, nullable=True)
+    ocr_confidence = Column(Float, nullable=True)
+    ocr_warning = Column(Text, nullable=True)

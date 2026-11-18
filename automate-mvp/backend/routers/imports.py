@@ -64,6 +64,9 @@ def _row_out(row):
         "status": row.status,
         "created_student_id": row.created_student_id,
         "source_text": row.source_text,
+        "ocr_provider": row.ocr_provider,
+        "ocr_confidence": row.ocr_confidence,
+        "ocr_warning": row.ocr_warning,
     }
 
 
@@ -155,8 +158,9 @@ def _revalidate_batch(db, batch):
         _revalidate(db, row)
 
 
-def _add_scan_rows(db, batch, page_texts):
-    for page_number, text in enumerate(page_texts, start=1):
+def _add_scan_rows(db, batch, pages):
+    for page_number, page in enumerate(pages, start=1):
+        text = page["text"]
         raw = extract_ocr_fields(text)
         data, issues, warnings = normalize_record(raw, db)
         row = ImportRow(
@@ -167,6 +171,9 @@ def _add_scan_rows(db, batch, page_texts):
             issues_json=_json(issues),
             warnings_json=_json(warnings),
             source_text=text,
+            ocr_provider=page.get("provider"),
+            ocr_confidence=page.get("confidence"),
+            ocr_warning=page.get("warning"),
             status="pending_review",
         )
         db.add(row)
@@ -259,7 +266,7 @@ def list_batches(db: Session = Depends(get_db)):
     return result
 
 
-@router.get("/{batch_id}")
+@router.get("/{batch_id:int}")
 def get_batch(batch_id: int, db: Session = Depends(get_db)):
     batch = db.query(ImportBatch).filter(ImportBatch.id == batch_id).first()
     if not batch:
@@ -306,6 +313,71 @@ def get_student_document(student_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Archived document record not found.")
     path = _document_path(student.source_document_key)
     return FileResponse(path, media_type=mimetypes.guess_type(batch.original_filename)[0] or "application/octet-stream")
+
+
+@router.get("/export")
+def export_verified_rows(db: Session = Depends(get_db)):
+    rows = db.query(ImportRow).join(ImportBatch, ImportBatch.id == ImportRow.batch_id).filter(
+        ImportRow.status == "imported",
+    ).order_by(ImportRow.id.asc()).all()
+
+    if not rows:
+        raise HTTPException(status_code=404, detail="No imported rows are available to export.")
+
+    import csv
+    import io
+
+    output = io.StringIO()
+    writer = csv.DictWriter(output, fieldnames=[
+        "student_id",
+        "reg_no",
+        "candidate_id",
+        "full_name",
+        "email",
+        "phone",
+        "category",
+        "department_slug",
+        "amount",
+        "paid",
+        "paid_at",
+        "source_document",
+    ])
+    writer.writeheader()
+
+    for row in rows:
+        data = _data(row)
+        student = db.query(Student).filter(Student.id == row.created_student_id).first()
+        reg_no = data.get("reg_no") or (student.reg_no if student else "")
+        candidate_id = data.get("candidate_id") or (student.candidate_id if student else "")
+        full_name = data.get("full_name") or (student.full_name if student else "")
+        email = data.get("email") or (student.email if student else "")
+        phone = data.get("phone") or (student.phone if student else "")
+        category = data.get("category") or (student.category if student else "")
+        department_slug = data.get("department_slug") or (student.department_slug if student else "")
+        amount = data.get("amount") or (student.amount if student else "")
+        paid = bool(data.get("paid") or (bool(student.paid) if student else False))
+        paid_at = data.get("paid_at")
+        if not paid_at and student and student.paid_at:
+            paid_at = student.paid_at.isoformat()
+        source_document = student.source_document_key if student else ""
+        writer.writerow({
+            "student_id": row.created_student_id,
+            "reg_no": reg_no,
+            "candidate_id": candidate_id,
+            "full_name": full_name,
+            "email": email,
+            "phone": phone,
+            "category": category,
+            "department_slug": department_slug,
+            "amount": amount,
+            "paid": "true" if paid else "false",
+            "paid_at": paid_at or "",
+            "source_document": source_document,
+        })
+
+    csv_bytes = output.getvalue().encode("utf-8")
+    headers = {"Content-Disposition": "attachment; filename=verified_import_export.csv"}
+    return Response(content=csv_bytes, media_type="text/csv", headers=headers)
 
 
 @router.put("/rows/{row_id}")

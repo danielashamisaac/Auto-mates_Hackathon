@@ -19,6 +19,8 @@ export default function AdminImportPanel({ onImportComplete }) {
   const [batch, setBatch] = useState(null);
   const [page, setPage] = useState(0);
   const [file, setFile] = useState(null);
+  const [ocrMode, setOcrMode] = useState('automatic');
+  const [geminiResult, setGeminiResult] = useState(null);
   const [selectedScanRowId, setSelectedScanRowId] = useState(null);
   const [busy, setBusy] = useState(false);
   const toast = useToast();
@@ -53,6 +55,22 @@ export default function AdminImportPanel({ onImportComplete }) {
     const formData = new FormData();
     formData.append('file', file);
     const isScan = /\.(pdf|png|jpe?g|tiff?|webp)$/i.test(file.name);
+    if (isScan && ocrMode === 'gemini') {
+      setBusy(true);
+      setGeminiResult(null);
+      try {
+        const result = await api.adminGeminiExtract(formData);
+        setGeminiResult(result);
+        setFile(null);
+        formElement.reset();
+        toast.push({ kind: 'success', title: 'Gemini extraction complete', message: 'Review the structured extraction below. It has not been staged for import.' });
+      } catch (error) {
+        toast.push({ kind: 'error', title: 'Gemini extraction failed', message: error.message });
+      } finally {
+        setBusy(false);
+      }
+      return;
+    }
     setBusy(true);
     try {
       const result = isScan ? await api.adminImportScan(formData) : await api.adminImportFile(formData);
@@ -169,12 +187,37 @@ export default function AdminImportPanel({ onImportComplete }) {
         <label className="import-file-control">
           {file && /\.(pdf|png|jpe?g|tiff?|webp)$/i.test(file.name) ? <FileText size={18} /> : <FileSpreadsheet size={18} />}
           <span>{file?.name || 'Choose CSV, XLSX, PDF, or image files'}</span>
-          <input type="file" accept=".csv,.xlsx,.pdf,.png,.jpg,.jpeg,.tif,.tiff,.webp,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/pdf,image/*" onChange={(event) => setFile(event.target.files?.[0] || null)} />
+          <input type="file" accept=".csv,.xlsx,.pdf,.png,.jpg,.jpeg,.tif,.tiff,.webp,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/pdf,image/*" onChange={(event) => {
+            setFile(event.target.files?.[0] || null);
+            setGeminiResult(null);
+          }} />
+        </label>
+        <label className="import-ocr-mode">
+          OCR mode
+          <select value={ocrMode} onChange={(event) => setOcrMode(event.target.value)}>
+            <option value="automatic">Automatic scan import</option>
+            <option value="gemini">Gemini extraction only</option>
+          </select>
         </label>
         <button className="btn btn-primary" type="submit" disabled={!file || busy}>
-          <Upload size={15} /> Preview upload
+          <Upload size={15} /> {file && /\.(pdf|png|jpe?g|tiff?|webp)$/i.test(file.name) && ocrMode === 'gemini' ? 'Extract with Gemini' : 'Preview upload'}
         </button>
       </form>
+
+      {geminiResult && (
+        <section className="gemini-extraction" aria-label="Gemini extraction result">
+          <h3>Gemini extraction result</h3>
+          <p className="text-dim">Review this result; it has not been staged or imported.</p>
+          <dl>
+            {Object.entries(geminiResult).map(([field, value]) => (
+              <div key={field}>
+                <dt>{field.replaceAll('_', ' ')}</dt>
+                <dd>{value == null || value === '' ? 'Not detected' : String(value)}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
 
       <div className="import-layout">
         <aside className="import-history" aria-label="Recent import batches">
@@ -202,11 +245,16 @@ export default function AdminImportPanel({ onImportComplete }) {
                   <h3>{batch.original_filename}</h3>
                   <p className="text-dim">{rows.length} records · {readyCount} valid and ready · {batch.status}</p>
                 </div>
-                {batch.source_type === 'spreadsheet' && readyCount > 0 && (
-                  <button className="btn btn-primary" type="button" onClick={commitBatch} disabled={busy}>
-                    <Check size={15} /> Import {readyCount} valid rows
-                  </button>
-                )}
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {batch.source_type === 'spreadsheet' && readyCount > 0 && (
+                    <button className="btn btn-primary" type="button" onClick={commitBatch} disabled={busy}>
+                      <Check size={15} /> Import {readyCount} valid rows
+                    </button>
+                  )}
+                  <a className="btn btn-ghost" href={api.adminImportExport()} target="_blank" rel="noreferrer" download>
+                    Export verified CSV
+                  </a>
+                </div>
               </div>
 
               {batch.source_type === 'scan' && batch.document_url && (
@@ -219,6 +267,10 @@ export default function AdminImportPanel({ onImportComplete }) {
                   </div>
                   <div className="scan-text">
                     <div className="scan-panel-heading">OCR text · page {selectedScanRow?.row_number || 1}</div>
+                    <div className="scan-ocr-meta">
+                      Engine: {selectedScanRow?.ocr_provider || 'unknown'}
+                      {selectedScanRow?.ocr_confidence != null && ` · Tesseract confidence: ${selectedScanRow.ocr_confidence}%`}
+                    </div>
                     <pre>{selectedScanRow?.source_text || 'No text was detected on this page. Enter the record details below.'}</pre>
                   </div>
                 </div>
@@ -262,7 +314,11 @@ export default function AdminImportPanel({ onImportComplete }) {
                       </label>
                     </div>
                     {row.issues.length > 0 && <ul className="import-messages errors">{row.issues.map((issue) => <li key={issue}>{issue}</li>)}</ul>}
-                    {row.warnings.length > 0 && <ul className="import-messages warnings">{row.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
+                    {(row.warnings.length > 0 || row.ocr_warning) && (
+                      <ul className="import-messages warnings">
+                        {[...row.warnings, ...(row.ocr_warning ? [row.ocr_warning] : [])].map((warning) => <li key={warning}>{warning}</li>)}
+                      </ul>
+                    )}
                     {row.status === 'pending_review' && (
                       <div className="import-row-actions">
                         <button className="btn btn-ghost" type="submit" disabled={busy}><Save size={14} /> Save and recheck</button>

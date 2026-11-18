@@ -11,6 +11,7 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from models import Department, ImportRow, Student
+from ocr_providers import parse_scan_pages
 
 
 MAX_ROWS = 1000
@@ -90,48 +91,13 @@ def parse_scanned_document(filename, content):
     if extension not in {"pdf", "png", "jpg", "jpeg", "tif", "tiff", "webp"}:
         raise ValueError("Upload a PDF or image file (PNG, JPG, TIFF, or WEBP).")
     try:
-        import fitz
-        import pytesseract
-        from PIL import Image
-    except ImportError as exc:
-        raise RuntimeError("Scan processing dependencies are missing. Install the backend requirements and Tesseract OCR.") from exc
-
-    import os
-    if os.getenv("TESSERACT_CMD"):
-        pytesseract.pytesseract.tesseract_cmd = os.environ["TESSERACT_CMD"]
-
-    try:
-        if extension == "pdf":
-            try:
-                document = fitz.open(stream=content, filetype="pdf")
-            except Exception as exc:
-                raise ValueError("Could not read this PDF. It may be damaged or password-protected.") from exc
-            if document.page_count == 0 or document.page_count > 20:
-                document.close()
-                raise ValueError("A scanned PDF must contain between 1 and 20 pages.")
-            try:
-                page_texts = []
-                for page in document:
-                    scale = min(2, 2400 / max(page.rect.width, page.rect.height))
-                    pixmap = page.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
-                    image = Image.frombytes("RGB", (pixmap.width, pixmap.height), pixmap.samples)
-                    page_texts.append(pytesseract.image_to_string(image, lang="eng"))
-                    image.close()
-                return page_texts
-            finally:
-                document.close()
-        try:
-            image = Image.open(io.BytesIO(content))
-            if image.width * image.height > 40_000_000:
-                raise ValueError("Image dimensions are too large to process safely.")
-        except ValueError:
-            raise
-        except Exception as exc:
-            raise ValueError("Could not read this image file.") from exc
-        with image.convert("RGB") as rgb_image:
-            return [pytesseract.image_to_string(rgb_image, lang="eng")]
-    except pytesseract.TesseractNotFoundError as exc:
-        raise RuntimeError("Tesseract OCR is not installed or not on PATH. Install it or set TESSERACT_CMD.") from exc
+        return parse_scan_pages(filename, content)
+    except ValueError:
+        raise
+    except RuntimeError as exc:
+        raise
+    except Exception as exc:
+        raise RuntimeError("Scan processing failed. Check the OCR configuration and dependencies.") from exc
 
 
 def extract_ocr_fields(text):

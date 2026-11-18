@@ -111,6 +111,38 @@ spreadsheet uploads remain limited to 1,000 rows and 10 MB. OCR field prefill de
 on recognizable printed labels and should always be checked by a reviewer, especially
 for handwriting.
 
+### Gemini OCR testing
+
+Tesseract remains the default. To send every scanned page to Gemini for a test, add
+these settings to `backend/.env`, then restart the backend:
+
+```env
+OCR_PROVIDER=gemini
+GEMINI_API_KEY=your-key
+GEMINI_TIMEOUT_MS=120000
+```
+
+`GEMINI_TIMEOUT_MS` controls the Gemini request timeout in milliseconds (default
+120000, or 2 minutes) for both the Gemini-only preview and automatic scan OCR. If a
+request still times out, try a smaller image or single-page PDF and check the backend
+internet connection and terminal logs. Temporary Gemini 503 high-demand responses
+are retried up to two times with a short backoff; if Gemini remains unavailable, retry
+later.
+
+For confidence-based fallback instead, leave `OCR_PROVIDER=tesseract` and set
+`OCR_ALLOW_GEMINI_FALLBACK=true`. The default threshold is 65; override it with
+`OCR_GEMINI_CONFIDENCE_THRESHOLD` (0-100). Gemini is only called for pages below that
+threshold or if local OCR fails. Keep the key server-side. The Gemini free tier may use
+submitted content to improve Google products, so test only with synthetic or properly
+anonymized forms unless your organization has approved sending student data to Google.
+All results still require administrator review before importing.
+
+Admins can select **Gemini extraction only** in the import panel to call
+`POST /api/ocr/gemini-extract` directly. This authenticated endpoint uses
+`gemini-3.8-flash`, returns structured registration fields, and does not fall back to
+Tesseract. Its result is an extraction preview only; it is not staged or imported.
+The Gemini API key stays on the backend.
+
 ---
 
 ## 4. API reference (high level)
